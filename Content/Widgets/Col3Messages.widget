@@ -1,0 +1,40 @@
+<div class="col-sm-7">
+    <div class="hpanel hviolet">
+        <div class="panel-body h-300 no-padding">
+            <div class="chat-discussion" style="height:auto;">
+                <div class="chat-message">
+                    <img class="message-avatar" src="Template/images/a1.jpg" alt="">
+                    <div class="message">
+                        <a class="message-author" href="#">سعید هدایتی</a>
+                        <span class="message-date">18:33:27 - 25 دی ماه 1390</span>
+                        <span class="message-content">
+                            نرم افزار اندروید وکیل یار به عنوان یک روش مناسب برای آشنایی با نامزد های انتخاباتی می باشد.
+                        </span>
+
+                        <div class="m-t-md">
+                            <a class="btn btn-xs btn-success"><i class="fa fa-heart"></i> دوست دارم</a>
+                            <a class="btn btn-xs btn-warning2"><i class="fa fa-eye"></i> سقلمه زدن</a>
+                            <a class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i>&nbsp; پاسخ به پیام</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    <img class="message-avatar" src="Template/images/a4.jpg" alt="">
+                    <div class="message">
+                        <a class="message-author" href="#"> ریحانا</a>
+                        <span class="message-date">  4:55:19 - 13 آذر 1391 </span>
+                        <span class="message-content">
+                            . . .
+                        </span>
+                        <div class="m-t-md">
+                            <!--<a class="btn btn-xs btn-default"><i class="fa fa-thumbs-up"></i> می پسندم  </a>-->
+                            <a class="btn btn-xs btn-success"><i class="fa fa-heart"></i> دوست دارم</a>
+                            <a class="btn btn-xs btn-warning2"><i class="fa fa-eye"></i> سقلمه زدن</a>
+                            <a class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i>&nbsp; پاسخ به پیام</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+C:\Users\Novin\Documents\Visual Studio 2015\Projects\Network[2016-01-21]\Network\bin\Network.dll.config
+C:\Users\Novin\Documents\Visual Studio 2015\Projects\Network[2016-01-21]\Network\bin\Network.dll
+C:\Users\Novin\Documents\Visual Studio 2015\Projects\Network[2016-01-21]\Network\bin\Network.pdb
+C:\Users\Novin\Documents\Visual Studio 2015\Projects\Network[2016-01-21]\Network\obj\Debug\Network.csprojResolveAssemblyReference.cache
+C:\Users\Novin\Documents\Visual Studio 2015\Projects\Network[2016-01-21]\Network\obj\Debug\Network.dll
+C:\Users\Novin\Documents\Visual Studio 2015\Projects\Network[2016-01-21]\Network\obj\Debug\Network.pdb
+C:\xampp\htdocs\NetworkCMS\Network[2016-01-21]\Network\bin\Network.dll.config
+C:\xampp\htdocs\NetworkCMS\Network[2016-01-21]\Network\bin\Network.dll
+C:\xampp\htdocs\NetworkCMS\Network[2016-01-21]\Network\bin\Network.pdb
+C:\xampp\htdocs\NetworkCMS\Network[2016-01-21]\Network\obj\Debug\Network.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\NetworkCMS\Network[2016-01-21]\Network\obj\Debug\Network.dll
+C:\xampp\htdocs\NetworkCMS\Network[2016-01-21]\Network\obj\Debug\Network.pdb

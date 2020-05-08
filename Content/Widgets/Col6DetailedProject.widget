@@ -1,0 +1,74 @@
+<?php
+$project = $_GET[0];
+?>
+<div style="" class="col-lg-6">
+    <div class="hpanel hgreen" id="pnl1">
+        <div class="panel-body">
+            <button class="btn btn-sm btn-success btn-outline pull-left">
+                <!--<i class="fa fa-eye"></i>&nbsp;-->
+                مشاهده اطلاعات پروژه
+            </button>
+            <div class="row">
+                <div style="" class="col-sm-8">
+                    <h4><a href=""><?php echo $project->ProjectName ?></a></h4>
+
+                    <p class="justify m-line-height">
+                        <?php
+                        echo $project->Description;
+                        ?>
+
+                    </p>
+
+                    <div class="row">
+                        <div style="" class="col-sm-3">
+                            <div class="project-label">مشتری</div>
+                            <small>افرا نت</small>
+                        </div>
+                        <div style="" class="col-sm-3">
+                            <div class="project-label">نسخه</div>
+                            <small>1.5.2</small>
+                        </div>
+                        <div style="" class="col-sm-3">
+                            <div class="project-label">فرجه</div>
+                            <small>1394-12-10</small>
+                        </div>
+                        <div style="" class="col-sm-3">
+                            <div class="project-label">پیشرفت</div>
+                            <div class="progress m-t-xs full progress-small">
+                                <div style="width : 50%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="12" role="progressbar" class=" progress-bar progress-bar-warning progress-bar-striped active">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="" class="col-sm-4 project-info">
+
+                    <div class="project-value m-t-md center">
+                        <h2 class="text-green">
+                            5,000,000 تومان
+                        </h2>
+                    </div>
+                    <div class="project-people m-t-lg">
+                        <img alt="logo" class="img-circle" src="Template/images/a1.jpg">
+                        <img alt="logo" class="img-circle" src="Template/images/a2.jpg">
+                        <img alt="logo" class="img-circle" src="Template/images/a3.jpg">
+                        <img alt="logo" class="img-circle" src="Template/images/a4.jpg">
+                        <img alt="logo" class="img-circle" src="Template/images/a5.jpg">
+                        <img alt="logo" class="img-circle" src="Template/images/a6.jpg">
+                        <img alt="logo" class="img-circle" src="Template/images/a7.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="pull-right">
+                <span>
+                    بازدید :
+                </span>
+                &nbsp;
+                <strong>400</strong>
+            </div>
+            <span class="clearfix"></span>
+        </div>
+    </div>
+</div>

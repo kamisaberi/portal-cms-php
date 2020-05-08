@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <link href="styles/font-awesome.css" rel="stylesheet" />
+    <link href="styles/metisMenu.css" rel="stylesheet" />
+    <link href="styles/animate.css" rel="stylesheet" />
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+    <link href="styles/bootstrap-rtl.min.css" rel="stylesheet" />
+
+
+    <link href="styles/bootstrap-editable.css" rel="stylesheet" />
+    <link href="styles/select2.css" rel="stylesheet" />
+    <link href="styles/select2-bootstrap.css" rel="stylesheet" />
+    <link href="styles/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+    <link href="styles/bootstrap-datepicker3.min.css" rel="stylesheet" />
+    <link href="styles/awesome-bootstrap-checkbox.css" rel="stylesheet" />
+
+
+
+
+    <link href="styles/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="styles/helper.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+
+
+
+
+
+
+</head>
+<body>
+    <!-- Simple splash screen-->
+    <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1></h1><p></p><img src="images/loading-bars.svg" width="64" height="64" /> </div> </div>
+    <!--[if lt IE 7]>
+    <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Header -->
+    <div id="header">
+        <div class="color-line">
+        </div>
+        <div id="logo" class="light-version">
+            <span class="logo-text">سایت ناریج</span>
+        </div>
+        <nav role="navigation">
+            <div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
+            <div class="small-logo">
+                <!--<span class="text-primary"></span>-->
+            </div>
+            <form role="search" class="navbar-form-custom" method="post" action="index.html#">
+                <div class="form-group">
+                    <input type="text" placeholder="جستجو . . ." class="form-control" name="search">
+                </div>
+            </form>
+            <div class="mobile-menu">
+                <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="collapse mobile-navbar" id="mobile-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="" href="#">ورود</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">خروج</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">پروفایل من</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-left">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="index.html#" data-toggle="dropdown">
+                            <i class="pe-7s-speaker"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right hdropdown notification animated flipInX">
+                            <li>
+                                <a>
+                                    <span class="label label-success">جدید</span> این متن برای تست است
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="label label-warning">هشدار</span> این متن برای تست است
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="label label-danger">خطا</span> این متن برای تست است
+                                </a>
+                            </li>
+                            <li class="summary"><a href="index.html#">مشاهده همه اعلان ها</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="index.html#" data-toggle="dropdown">
+                            <i class="pe-7s-keypad"></i>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right hdropdown bigmenu animated flipInX">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-portfolio text-deepskyblue"></i>
+                                                <h5>طرح ها</h5>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-mail text-orange"></i>
+                                                <h5>پست الکترونیک</h5>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-users text-green"></i>
+                                                <h5>مخاطبان</h5>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-comment text-deepskyblue"></i>
+                                                <h5>انجمن</h5>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-graph1 text-red"></i>
+                                                <h5>تجزیه و تحلیل</h5>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-box1 text-green"></i>
+                                                <h5>اسناد</h5>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle label-menu-corner" href="index.html#" data-toggle="dropdown">
+                            <i class="pe-7s-mail"></i>
+                            <span class="label bg-orange">4</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right hdropdown animated flipInX">
+                            <li class="title">
+                                شما چهار پیام جدید دارید
+                            </li>
+                            <li>
+                                <a>
+                                    این متن تست می باشد
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    این متن تست می باشد
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    این متن تست می باشد
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    این متن تست می باشد
+                                </a>
+                            </li>
+                            <li class="summary"><a href="index.html#">مشاهده همه پیام ها</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html#" id="sidebar" class="right-sidebar-toggle">
+                            <i class="pe-7s-upload pe-7s-news-paper"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            <i class="pe-7s-upload pe-rotate-270"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Navigation -->
+    <aside id="menu">
+        <div id="navigation">
+            <div class="profile-picture">
+                <a href="#">
+                    <img src="images/profile.jpg" class="img-circle m-b border-orange box-shadow profile-img" alt="logo">
+                </a>
+
+                <div class="stats-label text-color">
+                    <span class="bg-orange-color font-extra-bold medium-line-height">سینا هدایتی</span>
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="index.html#" data-toggle="dropdown">
+                            <small class="text-muted">بنیان گذار برنامه <b class="caret"></b></small>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInLeft m-t-xs">
+                            <li><a href="#">مخاطبان</a></li>
+                            <li><a href="#">پروفایل</a></li>
+                            <li><a href="#">تجزیه و تحلیل</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">خروج</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div id="sparkline1" class="small-chart m-t-sm"></div>
+                    <div>
+                        <h4 class="m-b-xs">
+                            120,000
+                            <br />
+                            <span class="small">تومان</span>
+                        </h4>
+                        <small class="text-muted">درآمد شما از سال گذشته برای فروش محصول</small>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav" id="side-menu">
+                <li class="active">
+                    <a href="#"> <span class="nav-label">داشبرد</span> <span class="label bg-orange pull-left">نسخه 1</span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">تجزیه و تحلیل</span><span class="label bg-orange pull-left">تازه</span> </a>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">رابط کاربری</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">قسمت های برنامه</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">نمودار ها</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">جداول</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">ویدجت</span> <span class="label bg-orange pull-left">ویژه</span></a>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">فرم ها</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">تنظیمات قالب</span></a>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">سیستم شبکه ای</span></a>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">صفحه نخست</span></a>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">سایر نسخه ها</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+
+
+        <div class="normalheader transition animated zoomIn">
+            <div class="hpanel">
+                <div class="panel-body">
+                    <a class="small-header-action" href="">
+                        <div class="clip-header">
+                            <i class="fa fa-arrow-up"></i>
+                        </div>
+                    </a>
+
+                    <div id="hbreadcrumb" class="pull-left m-t-lg">
+                        <ol class="hbreadcrumb breadcrumb ltr-dir">
+                            <li><a href="javascript:void(0);" class="active">Dashboard</a></li>
+                        </ol>
+                    </div>
+                    <h2 class="font-light m-b-xs">
+                        پروفایل
+                    </h2>
+                    <small>شما در اینجا هستید</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="content animate-panel">
+
+
+
+            <div class="form-group">
+                <label for="default" class="control-label"> عنوان پروژه :</label>
+                <input id="default" type="text" class="form-control" placeholder="عنوان پروژه را بنویسید">
+            </div>
+
+            <div class="form-group">
+                <label for="single" class="control-label">انتخاب پلتفرم :</label>
+                <select id="single" class="form-control select2">
+                    <option></option>
+                    <optgroup label="ویندوز">
+                        <option value="AK">ویندوز اپ</option>
+                        <option value="HI">وب اپ</option>
+                        <option value="HI">کنسول اپ</option>
+                    </optgroup>
+                    <optgroup label="شرکت">
+                        <option value="CA">سامسونگ</option>
+                        <option value="NV">اپل</option>
+                        <option value="OR">ال جی</option>
+                        <option value="WA">شیائومی</option>
+                    </optgroup>
+                    <optgroup label="لپ تاپe">
+                        <option value="AZ">ایسوس</option>
+                        <option value="CO">اچ پی</option>
+                        <option value="ID">اپل</option>
+                        <option value="MT">سامسونگ</option>
+                        <option value="NE">لنووو</option>
+                    </optgroup>
+
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="multiple" class="control-label">کنترل چند انتخابی</label>
+                <select id="multiple" class="form-control select2-multiple" multiple>
+                    <optgroup label="ایران">
+                        <option value="AK">گیلان</option>
+                        <option value="HI">تهران</option>
+                    </optgroup>
+                    <optgroup label="شرکت">
+                        <option value="CA">سامسونگ</option>
+                        <option value="NV">اپل</option>
+                        <option value="OR">ال جی</option>
+                        <option value="WA">شیائومی</option>
+                    </optgroup>
+                    <optgroup label="لپ تاپe">
+                        <option value="AZ">ایسوس</option>
+                        <option value="CO">اچ پی</option>
+                        <option value="ID">اپل</option>
+                        <option value="MT">سامسونگ</option>
+                        <option value="NE">لنووو</option>
+                    </optgroup>
+                </select>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Right sidebar -->
+        <div id="right-sidebar" class="animated fadeInLeft">
+            <button id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md">
+                <i class="pe pe-7s-close"></i>
+            </button>
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer">
+            <span class="pull-right small">
+                تمامی حقوق این سایت نزد صاحب آن محفوظ است
+            </span>
+            <span class="pull-left small">
+                Copyright © 2016 <a href="#" class="s-link">MyWebSite.com</a>
+            </span>
+        </footer>
+
+    </div>
+
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.slimscroll.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <!--<script src="scripts/jquery.flot.js"></script>
+    <script src="scripts/jquery.flot.resize.js"></script>
+    <script src="scripts/jquery.flot.pie.js"></script>
+    <script src="scripts/curvedLines.js"></script>
+    <script src="scripts/index.js"></script>-->
+    <script src="scripts/metisMenu.min.js"></script>
+    <script src="scripts/icheck.min.js"></script>
+    <!--<script src="scripts/jquery.peity.min.js"></script>-->
+    <script src="scripts/sparkline_index.js"></script>
+
+    <script src="scripts/moment.js"></script>
+    <script src="scripts/bootstrap-editable.min.js"></script>
+    <script src="scripts/select2.min.js"></script>
+    <script src="scripts/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="scripts/bootstrap-datepicker.min.js"></script>
+
+    <script src="scripts/homer.js"></script>
+    <!--<script src="scripts/charts.js"></script>-->
+
+    <script>
+        var placeholder = "یک گزینه را انتخاب کنید . .";
+
+        $(".select2, .select2-multiple").select2({ placeholder: placeholder });
+        $(".select2-allow-clear").select2({ allowClear: true, placeholder: placeholder });
+
+        // @see https://github.com/ivaynberg/select2/commit/6661e3
+        function repoFormatResult(repo) {
+            var markup = "<div class='select2-result-repository clearfix'>" +
+                "<div class='select2-result-repository__avatar'><img src='" + repo.owner.avatar_url + "' /></div>" +
+                "<div class='select2-result-repository__meta'>" +
+                    "<div class='select2-result-repository__title'>" + repo.full_name + "</div>";
+
+            if (repo.description) {
+                markup += "<div class='select2-result-repository__description'>" + repo.description + "</div>";
+            }
+
+            markup += "<div class='select2-result-repository__statistics'>" +
+                        "<div class='select2-result-repository__forks'><span class='glyphicon glyphicon-flash'></span> " + repo.forks_count + " Forks</div>" +
+                        "<div class='select2-result-repository__stargazers'><span class='glyphicon glyphicon-star'></span> " + repo.stargazers_count + " Stars</div>" +
+                        "<div class='select2-result-repository__watchers'><span class='glyphicon glyphicon-eye-open'></span> " + repo.watchers_count + " Watchers</div>" +
+                    "</div>" +
+                "</div></div>";
+
+            return markup;
+        }
+
+        function repoFormatSelection(repo) {
+            return repo.full_name;
+        }
+
+        $(".select2-remote").select2({
+            placeholder: "Search for a GitHub Repository",
+            minimumInputLength: 1,
+            // instead of writing the function to execute the request we use Select2's convenient helper
+            ajax: {
+                url: "https://api.github.com/search/repositories",
+                dataType: "json",
+                quietMillis: 250,
+                data: function (term, page) {
+                    return {
+                        // search term
+                        q: term
+                    };
+                },
+                results: function (data, page) {
+                    // parse the results into the format expected by Select2.
+                    // since we are using custom formatting functions we do not need to alter the remote JSON data
+                    return { results: data.items };
+                },
+                cache: true
+            },
+            initSelection: function (element, callback) {
+                // the input tag has a value attribute preloaded that points to a preselected repository's id
+                // this function resolves that id attribute to an object that select2 can render
+                // using its formatResult renderer - that way the repository name is shown preselected
+                var id = $(element).val();
+
+                if (id !== "") {
+                    $.ajax("https://api.github.com/repositories/" + id, {
+                        dataType: "json"
+                    }).done(function (data) {
+                        callback(data);
+                    });
+                }
+            },
+            formatResult: repoFormatResult,
+            formatSelection: repoFormatSelection,
+            // apply css that makes the dropdown taller
+            dropdownCssClass: "bigdrop",
+            // we do not want to escape markup since we are displaying html in results
+            escapeMarkup: function (m) {
+                return m;
+            }
+        });
+
+        $("button[data-select2-open]").click(function () {
+            $("#" + $(this).data("select2-open")).select2("open");
+        });
+
+
+        var select2OpenEventName = "select2-open";
+
+        $(":checkbox").on("click", function () {
+            $(this).parent().nextAll("select").select2("enable", this.checked);
+        });
+
+
+        $(".select2, .select2-multiple, .select2-allow-clear, .select2-remote").on(select2OpenEventName, function () {
+            if ($(this).parents("[class*='has-']").length) {
+                var classNames = $(this).parents("[class*='has-']")[0].className.split(/\s+/);
+
+                for (var i = 0; i < classNames.length; ++i) {
+                    if (classNames[i].match("has-")) {
+                        $("#select2-drop").addClass(classNames[i]);
+                    }
+                }
+            }
+        });
+
+    </script>
+
+
+
+
+</body>
+</html>

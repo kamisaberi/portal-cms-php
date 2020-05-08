@@ -1,0 +1,603 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <link href="styles/font-awesome.css" rel="stylesheet" />
+    <link href="styles/metisMenu.css" rel="stylesheet" />
+    <link href="styles/animate.css" rel="stylesheet" />
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+    <link href="styles/bootstrap-rtl.min.css" rel="stylesheet" />
+
+    <link href="styles/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="styles/helper.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+
+
+
+
+
+
+</head>
+<body>
+    <!-- Simple splash screen-->
+    <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1></h1><p></p><img src="images/loading-bars.svg" width="64" height="64" /> </div> </div>
+    <!--[if lt IE 7]>
+    <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Header -->
+    <div id="header">
+        <div class="color-line">
+        </div>
+        <div id="logo" class="light-version">
+            <span class="logo-text">سایت ناریج</span>
+        </div>
+        <nav role="navigation">
+            <div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
+            <div class="small-logo">
+                <!--<span class="text-primary"></span>-->
+            </div>
+            <form role="search" class="navbar-form-custom" method="post" action="index.html#">
+                <div class="form-group">
+                    <input type="text" placeholder="جستجو . . ." class="form-control" name="search">
+                </div>
+            </form>
+            <div class="mobile-menu">
+                <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="collapse mobile-navbar" id="mobile-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="" href="#">ورود</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">خروج</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">پروفایل من</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-left">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="index.html#" data-toggle="dropdown">
+                            <i class="pe-7s-speaker"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right hdropdown notification animated flipInX">
+                            <li>
+                                <a>
+                                    <span class="label bg-green">جدید</span> این متن برای تست است
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="label bg-orange">هشدار</span> این متن برای تست است
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="label bg-red">خطا</span> این متن برای تست است
+                                </a>
+                            </li>
+                            <li class="summary"><a href="index.html#">مشاهده همه اعلان ها</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="index.html#" data-toggle="dropdown">
+                            <i class="pe-7s-keypad"></i>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right hdropdown bigmenu animated flipInX">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-portfolio text-deepskyblue"></i>
+                                                <h5>طرح ها</h5>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-mail text-orange"></i>
+                                                <h5>پست الکترونیک</h5>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-users text-green"></i>
+                                                <h5>مخاطبان</h5>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-comment text-deepskyblue"></i>
+                                                <h5>انجمن</h5>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-graph1 text-red"></i>
+                                                <h5>تجزیه و تحلیل</h5>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <i class="pe pe-7s-box1 text-green"></i>
+                                                <h5>اسناد</h5>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle label-menu-corner" href="index.html#" data-toggle="dropdown">
+                            <i class="pe-7s-mail"></i>
+                            <span class="label bg-orange">4</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right hdropdown animated flipInX">
+                            <li class="title">
+                                شما چهار پیام جدید دارید
+                            </li>
+                            <li>
+                                <a>
+                                    این متن تست می باشد
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    این متن تست می باشد
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    این متن تست می باشد
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    این متن تست می باشد
+                                </a>
+                            </li>
+                            <li class="summary"><a href="index.html#">مشاهده همه پیام ها</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html#" id="sidebar" class="right-sidebar-toggle">
+                            <i class="pe-7s-upload pe-7s-news-paper"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            <i class="pe-7s-upload pe-rotate-270"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Navigation -->
+    <aside id="menu">
+        <div id="navigation">
+            <div class="profile-picture">
+                <a href="#">
+                    <img src="images/profile.jpg" class="img-circle m-b border-orange box-shadow profile-img" alt="logo">
+                </a>
+
+                <div class="stats-label">
+                    <span class="text-orange font-extra-bold medium-line-height">سینا هدایتی</span>
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="index.html#" data-toggle="dropdown">
+                            <small class="text-muted">بنیان گذار برنامه <b class="caret"></b></small>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInLeft m-t-xs">
+                            <li><a href="#">مخاطبان</a></li>
+                            <li><a href="#">پروفایل</a></li>
+                            <li><a href="#">تجزیه و تحلیل</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">خروج</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div id="sparkline1" class="small-chart m-t-sm"></div>
+                    <div>
+                        <h4 class="m-b-xs">
+                            120,000
+                            <br />
+                            <span class="small">تومان</span>
+                        </h4>
+                        <small class="text-muted">درآمد شما از سال گذشته برای فروش محصول</small>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav" id="side-menu">
+                <li class="active">
+                    <a href="#"> <span class="nav-label">داشبرد</span> <span class="label bg-orange pull-left">نسخه 1</span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">تجزیه و تحلیل</span><span class="label bg-orange pull-left">تازه</span> </a>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">رابط کاربری</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">قسمت های برنامه</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">نمودار ها</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">جداول</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">ویدجت</span> <span class="label bg-orange pull-left">ویژه</span></a>
+                </li>
+                <li>
+                    <a href="index.html#"><span class="nav-label">فرم ها</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">گزینه 1</a></li>
+                        <li><a href="#">گزینه 2</a></li>
+                        <li><a href="#">گزینه 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">تنظیمات قالب</span></a>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">سیستم شبکه ای</span></a>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">صفحه نخست</span></a>
+                </li>
+                <li>
+                    <a href="#"> <span class="nav-label">سایر نسخه ها</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+
+
+        <div class="normalheader transition animated zoomIn">
+            <div class="hpanel">
+                <div class="panel-body">
+                    <a class="small-header-action" href="">
+                        <div class="clip-header">
+                            <i class="fa fa-arrow-up"></i>
+                        </div>
+                    </a>
+
+                    <div id="hbreadcrumb" class="pull-left m-t-lg">
+                        <ol class="hbreadcrumb breadcrumb ltr-dir">
+                            <li><a href="javascript:void(0);">Dashboard</a></li>
+                            <li class="active">
+                                <span>Profile </span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h2 class="font-light m-b-xs">
+                        پروفایل
+                    </h2>
+                    <small>شما در اینجا هستید</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="content animate-panel">
+
+            <div class="row">
+                <div style="" class="col-lg-4">
+                    <div class="hpanel horange">
+                        <div class="panel-body">
+                            <div class="pull-right text-right">
+                                <div class="btn-group">
+                                    <i class="fa fa-facebook btn btn-default btn-xs"></i>
+                                    <i class="fa fa-twitter btn btn-default btn-xs"></i>
+                                    <i class="fa fa-linkedin btn btn-default btn-xs"></i>
+                                </div>
+                            </div>
+                            <img alt="logo" class="img-circle m-b m-t-md" src="images/profile.jpg">
+                            <h3><a href="" class="text-orange">سینا هدایتی</a></h3>
+                            <div class="text-muted font-bold m-b-xs">ایران ، لنگرود</div>
+                            <p class="justify m-line-height">
+                                او تحصیل خود را در مقاطع کارشناسی، کارشناسی ارشد و دکتری در رشته مهندسی نرم‌افزار در دانشگاه صنعتی شریف به انجام رساند و ضمن فعالیتی حدود ۱۵ ساله در صنعت نرم‌افزار به عنوان برنامه‌نویس، طراح و معمار نرم‌افزار، از سال ۱۳۸۶ به عضویت هیئت علمی دانشکده مهندسی برق و کامپیوتر در دانشکده فنی دانشگاه تهران درآمد.
+                            </p>
+                            <div class="progress m-t-xs full progress-small">
+                                <div style="width: 75%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="65" role="progressbar" class="progress-bar progress-bar-striped progress-bar-success active">
+                                    <span class="sr-only">35% Complete (success)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="infont col-sm-4">
+                                    <div class="font-icon-detail">
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-graduation-cap fa m-l-xs"></i>
+                                            آموزش ها
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="infont col-sm-4">
+                                    <div class="font-icon-detail">
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-shopping-cart fa m-l-xs"></i>
+                                            محصولات
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="infont col-sm-4">
+                                    <div class="font-icon-detail">
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-tasks fa m-l-xs"></i>
+                                            پروژه ها
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer contact-footer">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="contact-stat"><span>پروژه : </span> <strong class="p-xxs">200</strong></div>
+                                </div>
+                                <div class="col-sm-4 border-right">
+                                    <div class="contact-stat"><span>پیام : </span> <strong class="p-xxs">300</strong></div>
+                                </div>
+                                <div class="col-sm-4 border-right">
+                                    <div class="contact-stat"><span>بازدید: </span> <strong class="p-xxs">400</strong></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="" class="col-lg-8">
+                    <div class="hpanel">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1">پروژه</a></li>
+                            <li><a data-toggle="tab" href="#tab-2">محصول</a></li>
+                            <li><a data-toggle="tab" href="#tab-3">دوره</a></li>
+                            <li><a data-toggle="tab" href="#tab-4">پیام</a></li>
+                            <li><a data-toggle="tab" href="#tab-5">مسابقه</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane active">
+
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>ردیف</th>
+                                                    <th>پروژه</th>
+                                                    <th>نام</th>
+                                                    <th>تلفن</th>
+                                                    <th>شرکت</th>
+                                                    <th>وضعیت</th>
+                                                    <th>پیشرفت</th>
+                                                    <th>تاریخ</th>
+                                                    <th>فعال</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>نرم افزار انتخاباتی</td>
+                                                    <td>وکیل یار</td>
+                                                    <td>0500 780909</td>
+                                                    <td>LWM</td>
+                                                    <td><span style="display: none;" class="pie">1/5</span><svg width="16" height="16" class="peity"><path fill="#62cb31" d="M 8 0 A 8 8 0 0 1 15.60845213036123 5.52786404500042 L 8 8"></path><path fill="#edf0f5" d="M 15.60845213036123 5.52786404500042 A 8 8 0 1 1 7.999999999999998 0 L 8 8"></path></svg></td>
+                                                    <td>40%</td>
+                                                    <td>مرداد 1394</td>
+                                                    <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+                                                    <!--<td><a href="#" class="center"><i class="fa fa-edit text-deepskyblue"></i></a></td>
+                                                    <td><a href="#" class="center"><i class="fa fa-eraser text-red"></i></a></td>-->
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>شبکه آموزشی</td>
+                                                    <td>Network</td>
+                                                    <td>0800 1111</td>
+                                                    <td>LWM</td>
+                                                    <td><span style="display: none;" class="pie">4/7</span><svg width="16" height="16" class="peity"><path fill="#62cb31" d="M 8 0 A 8 8 0 1 1 4.5289300870595355 15.207750943219352 L 8 8"></path><path fill="#edf0f5" d="M 4.5289300870595355 15.207750943219352 A 8 8 0 0 1 7.999999999999998 0 L 8 8"></path></svg></td>
+                                                    <td>75%</td>
+                                                    <td>دی 1394</td>
+                                                    <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>نرم افزار اندریوید</td>
+                                                    <td>دهه فجر</td>
+                                                    <td>(016977) 0648</td>
+                                                    <td>Tellus Ltd</td>
+                                                    <td><span style="display: none;" class="pie">12/3</span><svg width="16" height="16" class="peity"><circle fill="#62cb31" r="8" cy="8" cx="8"></circle></svg></td>
+                                                    <td>40%</td>
+                                                    <td>بهمن 1393</td>
+                                                    <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>نرم افزار اندریوید</td>
+                                                    <td>روز شمار</td>
+                                                    <td>0500 780909</td>
+                                                    <td>LWM</td>
+                                                    <td><span style="display: none;" class="pie">2/5</span><svg width="16" height="16" class="peity"><path fill="#62cb31" d="M 8 0 A 8 8 0 0 1 12.702282018339785 14.47213595499958 L 8 8"></path><path fill="#edf0f5" d="M 12.702282018339785 14.47213595499958 A 8 8 0 1 1 7.999999999999998 0 L 8 8"></path></svg></td>
+                                                    <td>40%</td>
+                                                    <td>بهمن 1393</td>
+                                                    <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div id="tab-2" class="tab-pane">
+                                <div class="panel-body">
+
+
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-pane">
+                                <div class="panel-body">
+
+
+                                </div>
+                            </div>
+                            <div id="tab-4" class="tab-pane">
+                                <div class="panel-body">
+                                    <div class="chat-discussion" style="height: auto">
+
+                                        <div class="chat-message">
+                                            <img class="message-avatar" src="images/a1.jpg" alt="">
+                                            <div class="message">
+                                                <a class="message-author" href="#">سعید هدایتی</a>
+                                                <span class="message-date">18:33:27 - 25 دی ماه 1390</span>
+                                                <span class="message-content">
+                                                    نرم افزار اندروید وکیل یار به عنوان یک روش مناسب برای آشنایی با نامزد های انتخاباتی می باشد.
+                                                </span>
+
+                                                <div class="m-t-md">
+                                                    <a class="btn btn-xs btn-success"><i class="fa fa-eye"></i> نمایش</a>
+                                                    <a class="btn btn-xs btn-warning"><i class="fa fa-eye-slash"></i> عدم نمایش</a>
+                                                    <a class="btn btn-xs btn-danger"><i class="fa fa-eraser"></i> حذف پیام</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-message">
+                                            <img class="message-avatar" src="images/a4.jpg" alt="">
+                                            <div class="message">
+                                                <a class="message-author" href="#"> ریحانا</a>
+                                                <span class="message-date">  4:55:19 - 13 آذر 1391 </span>
+                                                <span class="message-content">
+                                                    . . .
+                                                </span>
+                                                <div class="m-t-md">
+                                                    <a class="btn btn-xs btn-success"><i class="fa fa-eye"></i> نمایش</a>
+                                                    <a class="btn btn-xs btn-warning"><i class="fa fa-eye-slash"></i> عدم نمایش</a>
+                                                    <a class="btn btn-xs btn-danger"><i class="fa fa-eraser"></i> حذف پیام</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="chat-message">
+                                            <img class="message-avatar" src="images/a5.jpg" alt="">
+                                            <div class="message">
+                                                <a class="message-author" href="#"> آلیس </a>
+                                                <span class="message-date"> 11:5:17 - 7 فروردین 1394 </span>
+                                                <span class="message-content">
+                                                    موفق باشید . . .
+                                                </span>
+                                                <div class="m-t-md">
+                                                    <a class="btn btn-xs btn-success"><i class="fa fa-eye"></i> نمایش</a>
+                                                    <a class="btn btn-xs btn-warning"><i class="fa fa-eye-slash"></i> عدم نمایش</a>
+                                                    <a class="btn btn-xs btn-danger"><i class="fa fa-eraser"></i> حذف پیام</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="tab-5" class="tab-pane">
+                                <div class="panel-body">
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right sidebar -->
+        <div id="right-sidebar" class="animated fadeInLeft">
+            <button id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md">
+                <i class="pe pe-7s-close"></i>
+            </button>
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer">
+            <span class="pull-right small">
+                تمامی حقوق این سایت نزد صاحب آن محفوظ است
+            </span>
+            <span class="pull-left small">
+                Copyright © 2016 <a href="#" class="s-link">MyWebSite.com</a>
+            </span>
+        </footer>
+
+    </div>
+
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.slimscroll.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <!--<script src="scripts/jquery.flot.js"></script>
+    <script src="scripts/jquery.flot.resize.js"></script>
+    <script src="scripts/jquery.flot.pie.js"></script>
+    <script src="scripts/curvedLines.js"></script>
+    <script src="scripts/index.js"></script>-->
+    <script src="scripts/metisMenu.min.js"></script>
+    <script src="scripts/icheck.min.js"></script>
+
+    <script src="scripts/sparkline_index.js"></script>
+    <script src="scripts/jquery.peity.min.js"></script>
+
+
+    <script src="scripts/homer.js"></script>
+    <script src="scripts/charts.js"></script>
+
+</body>
+</html>

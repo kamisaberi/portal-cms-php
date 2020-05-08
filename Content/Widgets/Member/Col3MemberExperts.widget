@@ -1,0 +1,25 @@
+<div class="hpanel">
+    <div class="panel-body text-justify m-line-height hgreen h-300">
+
+        <h4 class="pull-right"><?php echo $_GET['bigtext']; ?></h4>
+        <i class="pe-7s-light fa-4x pull-left text-<?php echo $_GET['textcolor']; ?>"></i>
+        <div class="clearfix"></div>
+
+        <div class="m-t-md">
+
+            <ul class="skill">
+                <li><span class="label bg-pink">UI/UX</span></li>
+                <li><span class="label bg-violet">Web design</span></li>
+                <li><span class="label bg-gray">Photoshop</span></li>
+                <li><span class="label bg-green">HTML</span></li>
+                <li><span class="label bg-deepskyblue">CSS</span></li>
+                <li><span class="label bg-yellow">Jquery</span></li>
+                <li><span class="label bg-violet">Asp.NET</span></li>
+                <li><span class="label bg-deepskyblue">JavaScript</span></li>
+                <li><span class="label bg-gray">Java</span></li>
+            </ul>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

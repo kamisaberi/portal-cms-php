@@ -1,0 +1,17 @@
+
+<div class="col-sm-4">
+    <div class="hpanel h<?php echo $_GET['color']; ?>">
+        <div class="panel-body h-300">
+            <div class="text-center">
+                <h3 class="m-b-xs"><?php echo $_GET['bigtext']; ?></h3>
+                <div class="m">
+                    <i class="<?php echo $_GET['image']; ?> fa fa-5x text-<?php echo $_GET['imagecolor']; ?>"></i>
+                </div>
+                <p class="small m-lg">
+                    <?php echo $_GET['smalltext']; ?>
+                </p>
+                <button class="btn btn-<?php echo $_GET['buttoncolor']; ?> btn-outline btn-sm"><?php echo $_GET['buttontext']; ?></button>
+            </div>
+        </div>
+    </div>
+</div>

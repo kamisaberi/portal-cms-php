@@ -1,0 +1,40 @@
+<div class="hpanel">
+    <div class="panel-body text-justify m-line-height">
+        <h4 class="pull-right">آمار و ارقام</h4>
+        <i class="pe-7s-graph2 fa-4x pull-left text-deepskyblue"></i>
+        <div class="clearfix"></div>
+        <div class="Statistics-row  bottom-border-dotted">
+            <div class="cell r-float left-border-dotted">
+                <sapn class="bigger-175 text-green">
+                    1125
+                </sapn>
+                <br/>
+                بازدید
+            </div>
+            <div class="cell r-float">
+                <sapn class="bigger-175 text-deepskyblue">
+                    14
+                </sapn>
+                <br/>
+                مخاطب
+            </div>
+        </div>
+        <div class="Statistics-row">
+            <div class="cell r-float left-border-dotted">
+                <sapn class="bigger-175 text-yellow">
+                    123
+                </sapn>
+                <br/>
+                محصول
+            </div>
+            <div class="cell l-float ">
+                <sapn class="bigger-175 text-pink">
+                    17
+                </sapn>
+                <br/>
+                پروژه
+            </div>
+        </div>
+
+    </div>
+</div>

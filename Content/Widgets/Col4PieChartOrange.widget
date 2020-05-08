@@ -1,0 +1,46 @@
+<div class="col-sm-4">
+    <div class="hpanel horange animated zoomIn">
+        <div class="panel-body widget-small-height">
+            <div class="stats-title pull-right">
+                <h4><?php echo $_GET[0] ?></h4>
+            </div>
+            <div class="flot-chart m-t-lg" style="height: 120px">
+                <div class="flot-chart-content" id="project-flot-pie-chart" style="height: 120px; padding: 0px; position: relative;">
+                    <canvas height="150" width="215" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 172px; height: 120px;" class="flot-base"></canvas>
+                    <canvas height="150" width="215" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 172px; height: 120px;" class="flot-overlay"></canvas>
+                    <div class="legend">
+                        <div style="position: absolute; width: 43px; height: 57px; top: 5px; right: 5px; background-color: rgb(255, 255, 255); opacity: 0.85;">
+                        </div>
+                        <table style="position:absolute;top:5px;right:5px;font-size:smaller;color:#545454">
+                            <tbody>
+                                <tr>
+                                    <td class="legendColorBox">
+                                        <div style="border:1px solid #ccc;padding:1px">
+                                            <div style="width:4px;height:0;border:5px solid #fad57c;overflow:hidden">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="legendLabel">
+                                       <?php echo $_GET[1] ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="legendColorBox">
+                                        <div style="border:1px solid #ccc;padding:1px;">
+                                            <div style="width:4px;height:0;border:5px solid #fde5ad;overflow:hidden">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="legendLabel">
+                                        <?php echo $_GET[2] ?>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

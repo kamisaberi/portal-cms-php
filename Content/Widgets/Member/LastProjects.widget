@@ -1,0 +1,60 @@
+<?php
+require_once 'Classes/Project.inc';
+$projects = ProjectController::FindProjectsForMember($_GET['id']);
+?>
+
+
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h5>
+            اخرین پروژه ها
+
+        </h5>
+    </div>
+    <div class="ibox-content">
+        <table class="table table-hover no-margins">
+            <thead>
+            <tr>
+                <th>
+                    وضعیت
+                </th>
+                <th>
+                    تاریخ شروع
+                </th>
+                <th>
+                    تیم
+                </th>
+                <th>
+                    ارزش
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            <?php
+            foreach ($projects as $project) {
+                ?>
+                <tr>
+                    <td>
+                        <small>
+                            جهت بررسی
+                        </small>
+                    </td>
+                    <td><i class="fa fa-clock-o"></i>
+                        25 تیر 1393
+                    </td>
+                    <td>
+<?php echo $project->ProjectName ?>
+                    </td>
+                    <td class="text-navy">
+                        24,000,000 تومان
+                    </td>
+                </tr>
+                <?php
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+<?php
+$member = $_GET['member'];
+?>
+
+
+<div class="hpanel horange">
+    <div class="panel-body h-600">
+        <div class="pull-left text-right">
+            <div class="btn-group">
+                <i class="fa fa-facebook btn btn-default btn-xs"></i>
+                <i class="fa fa-twitter btn btn-default btn-xs"></i>
+                <i class="fa fa-linkedin btn btn-default btn-xs"></i>
+            </div>
+        </div>
+        <div class="profile-picture">
+            <img src="Template/images/a1.jpg" alt="تصویر کاربر" class="pull-right img-circle box-shadow profile-img orange-border" />
+            <span class="clearfix"></span>
+            <!--<h5 class="text-orange m-md">سینا سعادت</h5>-->
+            <!--<div class="center m-t-lg">
+                <a href="javascript:void(0)" class="btn btn-success">
+                    <i class="fa fa-check"></i>
+                    <small>دنبال کردن</small>
+                </a>
+                &nbsp;&nbsp;
+                <a href="javascript:void(0)" class="btn">
+                    <i class="fa fa-comment"></i>
+                </a>
+            </div>-->
+        </div>
+
+        <div class="panel panel-transparent">
+            <!--<div class="panel-heading">
+                <span class="panel-title">
+                    اطلاعات کاربر
+                </span>
+            </div>-->
+            <div class="panel-body  m-line-height htransparent">
+
+                <div class="profile-info-row">
+                    <!--<strong>
+                        نام :
+                    </strong>-->
+                    <h4 class="text-orange"> <?php echo $member->FirstName . " "  . $member->LastName  ?> </h4>
+                </div>
+                <div class="profile-info-row">
+                    <strong>
+                        موقعیت :
+                    </strong>
+                    <span class="text-gray"><?php echo  $member->Address ?></span>
+                </div>
+                <div class="profile-info-row">
+                    <strong>
+                        سن :
+                    </strong>
+                    <span class="text-gray">26 سال</span>
+                </div>
+                <div class="profile-info-row">
+                    <strong>
+                        پست الکترونیک :
+                    </strong>
+                    <span class="text-gray"><?php echo  $member->Email ?></span>
+                </div>
+                <!--<div class="profile-info-row">
+                    <strong>
+                        آخرین ورود :
+                    </strong>
+                    <span class="text-gray">10 بهمن 1394</span>
+                </div>-->
+
+
+                <p class="m-t-sm text-justify">
+                    او تحصیل خود را در مقاطع کارشناسی، کارشناسی ارشد و دکتری در رشته مهندسی نرم‌افزار در دانشگاه صنعتی شریف به انجام رساند و ضمن فعالیتی حدود ۱۵ ساله در صنعت نرم‌افزار به عنوان برنامه‌نویس، طراح و معمار نرم‌افزار، از سال ۱۳۸۶ به عضویت هیئت علمی دانشکده مهندسی برق و کامپیوتر در دانشکده فنی دانشگاه تهران درآمد.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="panel-footer">
+        <div class="row">
+            <div class="col-md-4"> <div class="contact-stat"><span>پروژه: </span> <strong>200</strong></div> </div>
+            <div class="col-md-4 border-right"> <div class="contact-stat"><span>پیام: </span> <strong>300</strong></div> </div>
+            <div class="col-md-4 border-right"> <div class="contact-stat"><span>بازدید: </span> <strong>400</strong></div> </div>
+        </div>
+    </div>
+</div>

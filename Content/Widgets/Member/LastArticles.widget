@@ -1,0 +1,63 @@
+<?php
+require_once 'Classes/Article.inc';
+$articles = ArticleController::FindArticlesForMember($_GET['id']);
+
+?>
+
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h5>
+            آخرین مقالات
+
+        </h5>
+    </div>
+    <div class="ibox-content">
+        <table class="table table-hover no-margins">
+            <thead>
+            <tr>
+                <th>
+                    عنوان
+                </th>
+
+                <th>
+                    تاریخ انتشار
+                </th>
+                <th>
+                    تعداد بازدید
+                </th>
+
+            </tr>
+            </thead>
+            <tbody>
+
+            <?php
+            foreach ($articles as $article) {
+                ?>
+                <tr>
+                    <td>
+
+                        <?php echo $article->Title ?>
+
+                    </td>
+                    <td><i class="fa fa-clock-o"></i>
+                        25 تیر 1393
+                    </td>
+                    <td>
+                        24,000
+                    </td>
+                    <td>
+                        <a href="Article.php?id=<?php echo $article->ArticleId; ?>">
+                            نمایش
+                        </a>
+                    </td>
+
+                </tr>
+                <?php
+            }
+            ?>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>

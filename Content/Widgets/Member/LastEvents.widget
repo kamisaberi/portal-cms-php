@@ -1,0 +1,54 @@
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h5>
+            رخداد های اینده
+        </h5>
+    </div>
+    <div class="ibox-content inspinia-timeline">
+        <div class="timeline-item">
+            <div class="row">
+                <div class="col-xs-3 date">
+                    <i class="fa fa-file-text"></i>
+                    25 یر 1395
+                    <br/>
+                    <small class="text-navy">
+                        2 ماه مانده
+                    </small>
+                </div>
+                <div class="col-lg-9 content">
+                    <p class="m-b-xs text-warning"><strong>
+                            شروع دوره وب
+                        </strong></p>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="row">
+                <div class="col-xs-3 date">
+                    <i class="fa fa-file-text"></i>
+                    25 یر 1395
+                    <br/>
+                    <small class="text-navy">
+                        2 ماه مانده
+                    </small>
+                </div>
+                <div class="col-lg-9 content">
+                    <p class="m-b-xs text-success"><strong>
+                            شروع دوره وب
+                        </strong></p>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

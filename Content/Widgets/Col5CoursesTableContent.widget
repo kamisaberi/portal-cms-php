@@ -1,0 +1,36 @@
+<div class="col-sm-5">
+    <div class="hpanel hyellow">
+        <div class="panel-body h-300">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ردیف</th>
+                            <th>عنوان دوره</th>
+                            <th>سطح</th>
+                            <th>فعال</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $courses = $_GET[1];
+                        $num = 1;
+                        foreach ($courses as $course) {
+                            ?>
+                            <tr>
+                                <td><?php echo $num++; ?></td>
+
+                                <td> <?php echo $course->Title; ?> </td>
+                                <td>حرفه ای</td>
+
+                                <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

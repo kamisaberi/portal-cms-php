@@ -1,0 +1,62 @@
+<?php
+require_once 'Classes/Product.inc';
+$products = ProductController::FindProductsForMember($_GET['id']);
+?>
+
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h5>
+            آخرین محصولات
+
+        </h5>
+    </div>
+    <div class="ibox-content">
+        <table class="table table-hover no-margins">
+            <thead>
+            <tr>
+                <th>
+                    وضعیت
+                </th>
+                <th>
+                    تاریخ شروع
+                </th>
+                <th>
+                    تیم
+                </th>
+                <th>
+                    ارزش
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            <?php
+            foreach ($products as $product) {
+                ?>
+
+                <tr>
+                    <td>
+                        <small>
+                            جهت بررسی
+                        </small>
+                    </td>
+                    <td><i class="fa fa-clock-o"></i>
+                        25 تیر 1393
+                    </td>
+                    <td>
+<?php echo $product->Title; ?>
+                    </td>
+                    <td class="text-navy">
+                        24,000,000 تومان
+                    </td>
+                </tr>
+                <?php
+            }
+            ?>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>

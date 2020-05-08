@@ -1,0 +1,59 @@
+<?php
+require_once 'Classes/Expert.inc';
+$experts = ExpertController::FindExpertsForMember($_GET['id']);
+
+?>
+
+
+<div class="ibox-content">
+    <!--                        <div class="row">-->
+    <!--                            <div style="" class="col-sm-12">-->
+    <!--                                <h4><a href="#">-->
+    <!--                                        تخصص ها-->
+    <!--                                    </a></h4>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                        <div class="row">-->
+
+    <div>
+
+
+        <?php
+        $i = 1;
+        foreach ($experts as $expert) {
+
+            ?>
+
+            <div>
+                                <span>
+
+                                    <?php echo $expert->Title; ?>
+
+
+                                    <small class="text-navy">&nbsp;&nbsp; <?php echo 10 * $i ?>%</small>
+                                </span>
+
+            </div>
+
+
+            <div class="progress progress-small">
+                <?php
+                if ($i % 2 == 0) {
+                    ?>
+                    <div style="width: <?php echo 10 * $i ?>%;" class="progress-bar"></div>
+                    <?php
+                } else {
+                    ?>
+                    <div style="width: <?php echo 10 * $i ?>%;" class="progress-bar progress-bar-danger"></div>
+                    <?php
+                }
+                ?>
+            </div>
+
+            <?php
+            $i++;
+        }
+        ?>
+
+    </div>
+</div>

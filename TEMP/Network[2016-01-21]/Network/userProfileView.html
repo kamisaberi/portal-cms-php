@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="styles/font-awesome.css" rel="stylesheet"/>
+    <link href="styles/bootstrap.css" rel="stylesheet"/>
+    <link href="styles/bootstrap-rtl.min.css" rel="stylesheet"/>
+    <link href="styles/animate.css" rel="stylesheet"/>
+
+    <link href="styles/pe-icon-7-stroke.css" rel="stylesheet"/>
+    <link href="styles/helper.css" rel="stylesheet"/>
+    <link href="styles/style.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<!-- Simple splash screen-->
+<div class="splash">
+    <div class="color-line"></div>
+    <div class="splash-title"><h1></h1>
+        <p></p><img src="images/loading-bars.svg" width="64" height="64"/></div>
+</div>
+<!--[if lt IE 7]>
+<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<nav class="navbar navbar-default  navbar-fixed-top">
+    <div class="color-line"></div>
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
+                    class="navbar-toggle collapsed" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"></a>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right medium-font">
+                <li class="active"><a class="page-scroll" href="#page-top">خانه</a></li>
+                <li><a class="page-scroll" page-scroll="" href="#components">کاربران</a></li>
+                <li><a class="page-scroll" page-scroll="" href="#features">پروژه ها</a></li>
+                <li><a class="page-scroll" page-scroll="" href="#team">محصولات</a></li>
+                <li><a class="page-scroll" page-scroll="" href="#pricing">دوره ها </a></li>
+                <li><a class="page-scroll" page-scroll="" href="#clients">ارتباط با ما </a></li>
+                <li><a class="page-scroll" page-scroll="" href="#contact">تماس با ما</a></li>
+
+            </ul>
+
+
+            <div class="navbar-left">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a aria-expanded="true" class="dropdown-toggle search-button" href="index.html#"
+                           data-toggle="dropdown">
+                            <i class="pe-7s-search"></i>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right hdropdown bigsearch animated flipInX">
+                            <form role="search" class="navbar-form-custom" method="post" action="index.html#">
+                                <div class="form-group">
+                                    <input placeholder="جستجو . . ." class="form-control text-orange" name="search"
+                                           type="text">
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</nav>
+
+
+<div class="content nav-top-offset animate-panel">
+
+    <div class="row">
+
+        <div class="col-sm-3">
+
+            <div class="hpanel horange">
+                <div class="panel-body h-600">
+                    <div class="pull-left text-right">
+                        <div class="btn-group">
+                            <i class="fa fa-facebook btn btn-default btn-xs"></i>
+                            <i class="fa fa-twitter btn btn-default btn-xs"></i>
+                            <i class="fa fa-linkedin btn btn-default btn-xs"></i>
+                        </div>
+                    </div>
+                    <div class="profile-picture">
+                        <img src="images/a1.jpg" alt="تصویر کاربر"
+                             class="pull-right img-circle box-shadow profile-img border-orange"/>
+                        <span class="clearfix"></span>
+                        <!--<h5 class="text-orange m-md">سینا سعادت</h5>-->
+                        <!--<div class="center m-t-lg">
+                            <a href="javascript:void(0)" class="btn btn-success">
+                                <i class="fa fa-check"></i>
+                                <small>دنبال کردن</small>
+                            </a>
+                            &nbsp;&nbsp;
+                            <a href="javascript:void(0)" class="btn">
+                                <i class="fa fa-comment"></i>
+                            </a>
+                        </div>-->
+                    </div>
+
+                    <div class="panel panel-transparent">
+                        <!--<div class="panel-heading">
+                            <span class="panel-title">
+                                اطلاعات کاربر
+                            </span>
+                        </div>-->
+                        <div class="panel-body  m-line-height htransparent">
+
+                            <div class="profile-info-row">
+                                <!--<strong>
+                                    نام :
+                                </strong>-->
+                                <h4 class="text-orange">سینا سعادت</h4>
+                            </div>
+                            <div class="profile-info-row">
+                                <strong>
+                                    موقعیت :
+                                </strong>
+                                <span class="text-gray">ایران، گیلان، لنگرود</span>
+                            </div>
+                            <div class="profile-info-row">
+                                <strong>
+                                    سن :
+                                </strong>
+                                <span class="text-gray">26 سال</span>
+                            </div>
+                            <div class="profile-info-row">
+                                <strong>
+                                    پست الکترونیک :
+                                </strong>
+                                <span class="text-gray">example@hotmal.com</span>
+                            </div>
+                            <!--<div class="profile-info-row">
+                                <strong>
+                                    آخرین ورود :
+                                </strong>
+                                <span class="text-gray">10 بهمن 1394</span>
+                            </div>-->
+
+
+                            <p class="m-t-sm text-justify">
+                                او تحصیل خود را در مقاطع کارشناسی، کارشناسی ارشد و دکتری در رشته مهندسی نرم‌افزار در
+                                دانشگاه صنعتی شریف به انجام رساند و ضمن فعالیتی حدود ۱۵ ساله در صنعت نرم‌افزار به عنوان
+                                برنامه‌نویس، طراح و معمار نرم‌افزار، از سال ۱۳۸۶ به عضویت هیئت علمی دانشکده مهندسی برق و
+                                کامپیوتر در دانشکده فنی دانشگاه تهران درآمد.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-stat"><span>پروژه: </span> <strong>200</strong></div>
+                        </div>
+                        <div class="col-md-4 border-right">
+                            <div class="contact-stat"><span>پیام: </span> <strong>300</strong></div>
+                        </div>
+                        <div class="col-md-4 border-right">
+                            <div class="contact-stat"><span>بازدید: </span> <strong>400</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget p-lg center golden-bg">
+                <div class="m-lg">
+                    <i class="fa fa-shield fa-4x"></i>
+                    <h1 class="m-md">456</h1>
+                    <h3 class="font-bold">
+                        امتیاز
+                    </h3>
+
+                </div>
+            </div>
+
+            <div class="hpanel">
+                <div class="panel-body text-justify m-line-height hgreen h-300">
+
+                    <h4 class="pull-right">مهارت ها</h4>
+                    <i class="pe-7s-light fa-4x pull-left text-violet"></i>
+                    <div class="clearfix"></div>
+
+                    <div class="m-t-md">
+
+                        <ul class="skill">
+                            <li><span class="label bg-pink">UI/UX</span></li>
+                            <li><span class="label bg-violet">Web design</span></li>
+                            <li><span class="label bg-gray">Photoshop</span></li>
+                            <li><span class="label bg-green">HTML</span></li>
+                            <li><span class="label bg-deepskyblue">CSS</span></li>
+                            <li><span class="label bg-yellow">Jquery</span></li>
+                            <li><span class="label bg-violet">Asp.NET</span></li>
+                            <li><span class="label bg-deepskyblue">JavaScript</span></li>
+                            <li><span class="label bg-gray">Java</span></li>
+                        </ul>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="hpanel">
+                <div class="panel-body text-justify m-line-height">
+                    <h4 class="pull-right">آمار و ارقام</h4>
+                    <i class="pe-7s-graph2 fa-4x pull-left text-deepskyblue"></i>
+                    <div class="clearfix"></div>
+                    <div class="Statistics-row  bottom-border-dotted">
+                        <div class="cell r-float left-border-dotted">
+                            <sapn class="bigger-175 text-green">
+                                1125
+                            </sapn>
+                            <br/>
+                            بازدید
+                        </div>
+                        <div class="cell r-float">
+                            <sapn class="bigger-175 text-deepskyblue">
+                                14
+                            </sapn>
+                            <br/>
+                            مخاطب
+                        </div>
+                    </div>
+                    <div class="Statistics-row">
+                        <div class="cell r-float left-border-dotted">
+                            <sapn class="bigger-175 text-yellow">
+                                123
+                            </sapn>
+                            <br/>
+                            محصول
+                        </div>
+                        <div class="cell l-float ">
+                            <sapn class="bigger-175 text-pink">
+                                17
+                            </sapn>
+                            <br/>
+                            پروژه
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hpanel">
+                <div class="panel-body">
+                    <div class=" pull-right">
+                        <h4>آمار بازدید</h4>
+                    </div>
+                    <div class="stats-icon pull-left">
+                        <i class="pe-7s-display2 fa-4x text-yellow"></i>
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="m-t-lg">
+                        <div class="row center">
+                            <div class="col-xs-6">
+                                <small>امروز :</small>
+                                <h4>170,20 <i class="fa fa-level-up text-green"></i></h4>
+                            </div>
+                            <div class="col-xs-6">
+                                <small>هفته گذشته :</small>
+                                <h4>580,90 <i class="fa fa-level-up text-green"></i></h4>
+                            </div>
+                        </div>
+                        <div class="row center">
+                            <div class="col-xs-6">
+                                <small>ماه گذشته :</small>
+                                <h4>170,20 <i class="fa fa-level-up text-green"></i></h4>
+                            </div>
+                            <div class="col-xs-6">
+                                <small>سال گذشته :</small>
+                                <h4>580,90 <i class="fa fa-level-up text-green"></i></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-sm-9">
+
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="hpanel hblue">
+                        <div class="panel-body h-300">
+                            <div class="text-center">
+                                <h3 class="m-b-xs">پکیج آموزش Windows</h3>
+                                <!--<p class="font-bold text-red">سحح پیشرفته</p>-->
+                                <div class="m">
+                                    <i class="fa-windows fa fa-5x text-deepskyblue"></i>
+                                </div>
+                                <p class="small m-lg">
+                                    این مجموعه شامل کلیه سرفصل های آموزشی جاوا در سطح حرفه ای بوده و . . .
+                                </p>
+                                <button class="btn btn-info btn-outline btn-sm">مشاهده اطلاعات محصول</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="hpanel hblue">
+                        <div class="panel-body h-300">
+                            <div class="text-center">
+                                <h3 class="m-b-xs">پکیج آموزش Linux</h3>
+                                <!--<p class="font-bold text-red">Lorem ipsum</p>-->
+                                <div class="m">
+                                    <i class="fa-linux fa fa-5x text-deepskyblue"></i>
+                                </div>
+                                <p class="small m-lg">
+                                    این مجموعه شامل 1000 پروژه در سطوح حرفه ای و متوسط می باشد
+                                </p>
+                                <button class="btn btn-info btn-outline btn-sm">مشاهده اطلاعات محصول</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="hpanel hblue">
+                        <div class="panel-body h-300">
+                            <div class="text-center">
+                                <h3 class="m-b-xs">پکیج آموزش Network</h3>
+                                <!--<p class="font-bold text-red">Lorem ipsum</p>-->
+                                <div class="m">
+                                    <i class="pe-7s-network fa-5x text-deepskyblue"></i>
+                                </div>
+                                <p class="small m-lg">
+                                    مجموعه آموزش شبکه برای آشنایی با تجهیزات سخت افزاری و نرم افزاری شبکه و . .
+                                </p>
+                                <button class="btn btn-info btn-outline btn-sm">مشاهده اطلاعات محصول</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row projects">
+
+                <div style="" class="col-lg-6">
+                    <div class="hpanel hgreen" id="pnl1">
+                        <div class="panel-body">
+                            <button class="btn btn-sm btn-success btn-outline pull-left">
+                                <!--<i class="fa fa-eye"></i>&nbsp;-->
+                                مشاهده اطلاعات پروژه
+                            </button>
+                            <div class="row">
+                                <div style="" class="col-sm-8">
+                                    <h4><a href="">نرم افزار ناریج</a></h4>
+
+                                    <p class="justify m-line-height">
+                                        لزوم ارائه نرم افزاری جامع و کامل در حوزه تبلیغات انتخابات و مسائل زیر مجموعه آن
+                                        برای گوشی های هوشمند ، ما را بر آن داشت تا با بهره گیری از نظرات کارشناسان خبره
+                                        و متخصص در زمینه علوم کامپیوتر ، طراحی نرم افزار ، طراحی گرافیک ، برنامه نویسی و
+                                        ... طراحی و پیاده سازی این نرم افزار را به طور صد در صد بومی برای اولین بار در
+                                        کشور تولید نماییم.
+                                    </p>
+
+                                    <div class="row">
+                                        <div style="" class="col-sm-3">
+                                            <div class="project-label">مشتری</div>
+                                            <small>افرا نت</small>
+                                        </div>
+                                        <div style="" class="col-sm-3">
+                                            <div class="project-label">نسخه</div>
+                                            <small>1.5.2</small>
+                                        </div>
+                                        <div style="" class="col-sm-3">
+                                            <div class="project-label">فرجه</div>
+                                            <small>1394-12-10</small>
+                                        </div>
+                                        <div style="" class="col-sm-3">
+                                            <div class="project-label">پیشرفت</div>
+                                            <div class="progress m-t-xs full progress-small">
+                                                <div style="width : 50%" aria-valuemax="100" aria-valuemin="0"
+                                                     aria-valuenow="12" role="progressbar"
+                                                     class=" progress-bar progress-bar-warning progress-bar-striped active">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="" class="col-sm-4 project-info">
+
+                                    <div class="project-value m-t-md center">
+                                        <h2 class="text-green">
+                                            5,000,000 تومان
+                                        </h2>
+                                    </div>
+                                    <div class="project-people m-t-lg">
+                                        <img alt="logo" class="img-circle" src="images/a1.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a2.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a3.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a4.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a5.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a6.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a7.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="pull-right">
+                                    <span>
+                                        بازدید :
+                                    </span>
+                                &nbsp;
+                                <strong>400</strong>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="" class="col-lg-6">
+                    <div class="hpanel hgreen" id="pnl2">
+                        <div class="panel-body">
+                            <button class="btn btn-sm btn-success btn-outline pull-left">
+                                <!--<i class="fa fa-eye"></i>&nbsp;-->
+                                مشاهده اطلاعات پروژه
+                            </button>
+                            <div class="row">
+                                <div style="" class="col-sm-8">
+                                    <h4><a href="">نرم افزار ناریج</a></h4>
+
+                                    <p class="justify m-line-height">
+                                        لزوم ارائه نرم افزاری جامع و کامل در حوزه تبلیغات انتخابات و مسائل زیر مجموعه آن
+                                        برای گوشی های هوشمند ، ما را بر آن داشت تا با بهره گیری از نظرات کارشناسان خبره
+                                        و متخصص در زمینه علوم کامپیوتر ، طراحی نرم افزار ، طراحی گرافیک ، برنامه نویسی و
+                                        ... طراحی و پیاده سازی این نرم افزار را به طور صد در صد بومی برای اولین بار در
+                                        کشور تولید نماییم.
+                                    </p>
+
+                                    <div class="row">
+                                        <div style="" class="col-sm-3">
+                                            <div class="project-label">مشتری</div>
+                                            <small>افرا نت</small>
+                                        </div>
+                                        <div style="" class="col-sm-3">
+                                            <div class="project-label">نسخه</div>
+                                            <small>1.5.2</small>
+                                        </div>
+                                        <div style="" class="col-sm-3">
+                                            <div class="project-label">فرجه</div>
+                                            <small>1394-12-10</small>
+                                        </div>
+                                        <div style="" class="col-sm-3">
+                                            <div class="project-label">پیشرفت</div>
+                                            <div class="progress m-t-xs full progress-small">
+                                                <div style="width: 100%" aria-valuemax="100" aria-valuemin="0"
+                                                     aria-valuenow="12" role="progressbar"
+                                                     class=" progress-bar progress-bar-success progress-bar-striped active">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="" class="col-sm-4 project-info">
+
+                                    <div class="project-value m-t-md center">
+                                        <h2 class="text-green">
+                                            5,000,000 تومان
+                                        </h2>
+                                    </div>
+                                    <div class="project-people m-t-lg">
+                                        <img alt="logo" class="img-circle" src="images/a1.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a2.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a3.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a4.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a5.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a6.jpg">
+                                        <img alt="logo" class="img-circle" src="images/a7.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="pull-right">
+                                    <span>
+                                        بازدید :
+                                    </span>
+                                &nbsp;
+                                <strong>400</strong>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-sm-5">
+                    <div class="hpanel hyellow">
+                        <!--<div class="panel-heading hbuilt">
+                            <a class="showhide pull-left">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            درس هایی که میتواند تدریس کند
+                        </div>-->
+                        <div class="panel-body h-300">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+
+                                        <th>ردیف</th>
+                                        <th>عنوان دوره</th>
+                                        <th>سطح</th>
+                                        <th>فعال</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>دوره آموزش #C</td>
+                                        <td>حرفه ای</td>
+
+                                        <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>دوره آموزش Java</td>
+                                        <td>مقدماتی</td>
+
+                                        <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>دوره آموزش Html, Css, JavaScript</td>
+                                        <td>آشنایی</td>
+
+                                        <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>دوره آموزش ++C</td>
+                                        <td>حرفه ای</td>
+
+                                        <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>دوره آموزش Sal Server</td>
+                                        <td>مقدماتی</td>
+
+                                        <td><a href="#" class="center"><i class="fa fa-check text-green"></i></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-7">
+                    <div class="hpanel hviolet">
+                        <!--<div class="panel-heading hbuilt">
+                            <a class="showhide pull-left">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            نظرات کاربران
+                        </div>-->
+                        <div class="panel-body h-300 no-padding">
+                            <div class="chat-discussion" style="height:auto;">
+                                <div class="chat-message">
+                                    <img class="message-avatar" src="images/a1.jpg" alt="">
+                                    <div class="message">
+                                        <a class="message-author" href="#">سعید هدایتی</a>
+                                        <span class="message-date">18:33:27 - 25 دی ماه 1390</span>
+                                            <span class="message-content">
+                                                نرم افزار اندروید وکیل یار به عنوان یک روش مناسب برای آشنایی با نامزد های انتخاباتی می باشد.
+                                            </span>
+
+                                        <div class="m-t-md">
+                                            <a class="btn btn-xs btn-success"><i class="fa fa-heart"></i> دوست دارم</a>
+                                            <a class="btn btn-xs btn-warning2"><i class="fa fa-eye"></i> سقلمه زدن</a>
+                                            <a class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i>&nbsp; پاسخ به
+                                                پیام</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-message">
+                                    <img class="message-avatar" src="images/a4.jpg" alt="">
+                                    <div class="message">
+                                        <a class="message-author" href="#"> ریحانا</a>
+                                        <span class="message-date">  4:55:19 - 13 آذر 1391 </span>
+                                            <span class="message-content">
+                                                . . .
+                                            </span>
+                                        <div class="m-t-md">
+                                            <!--<a class="btn btn-xs btn-default"><i class="fa fa-thumbs-up"></i> می پسندم  </a>-->
+                                            <a class="btn btn-xs btn-success"><i class="fa fa-heart"></i> دوست دارم</a>
+                                            <a class="btn btn-xs btn-warning2"><i class="fa fa-eye"></i> سقلمه زدن</a>
+                                            <a class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i>&nbsp; پاسخ به
+                                                پیام</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- Footer-->
+<footer class="main-footer">
+        <span class="pull-right small">
+            تمامی حقوق این سایت نزد صاحب آن محفوظ است
+        </span>
+        <span class="pull-left small">
+            Copyright © 2016 <a href="#" class="s-link">MyWebSite.com</a>
+        </span>
+    <span class="clearfix"></span>
+</footer>
+<div class="color-line"></div>
+
+
+<script src="scripts/jquery.min.js"></script>
+<!--<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/jquery.slimscroll.min.js"></script>-->
+<script src="scripts/bootstrap.min.js"></script>
+<!--<script src="scripts/jquery.flot.js"></script>
+<script src="scripts/jquery.flot.resize.js"></script>
+<script src="scripts/jquery.flot.pie.js"></script>
+<script src="scripts/curvedLines.js"></script>
+<script src="scripts/index.js"></script>-->
+<script src="scripts/metisMenu.min.js"></script>
+<script src="scripts/icheck.min.js"></script>
+<!--<script src="scripts/jquery.peity.min.js"></script>-->
+<!--<script src="scripts/sparkline_index.js"></script>-->
+
+<script src="scripts/homer.js"></script>
+
+
+</body>
+</html>

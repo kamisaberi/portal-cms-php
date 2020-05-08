@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09EF96B2-678B-422E-AEAF-A5495987D143}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Network</RootNamespace>
+    <AssemblyName>Network</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminDashboard.html" />
+    <Content Include="editorTest.html" />
+    <Content Include="fonts\bootstrap-font\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="fonts\footable\footable.svg" />
+    <Content Include="fonts\ir-fonts\IRANSans-Light.svg" />
+    <Content Include="fonts\ir-fonts\Yekan.svg" />
+    <Content Include="fonts\Pe-icon-7-stroke\Pe-icon-7-stroke.svg" />
+    <Content Include="images\a1.jpg" />
+    <Content Include="images\a2.jpg" />
+    <Content Include="images\a3.jpg" />
+    <Content Include="images\a4.jpg" />
+    <Content Include="images\a5.jpg" />
+    <Content Include="images\a6.jpg" />
+    <Content Include="images\a7.jpg" />
+    <Content Include="images\a8.jpg" />
+    <Content Include="images\a9.jpg" />
+    <Content Include="images\loading-bars.svg" />
+    <Content Include="images\p1.jpg" />
+    <Content Include="images\p2.jpg" />
+    <Content Include="images\plugin\clear.png" />
+    <Content Include="images\plugin\green%402x.png" />
+    <Content Include="images\plugin\loading.gif" />
+    <Content Include="images\plugin\select2-spinner.gif" />
+    <Content Include="images\plugin\select2.png" />
+    <Content Include="images\plugin\select2x2.png" />
+    <Content Include="images\profile.jpg" />
+    <Content Include="index.html" />
+    <Content Include="login.html" />
+    <Content Include="newUserDashboard.html" />
+    <Content Include="ORIG\alerts.html" />
+    <Content Include="ORIG\analytics.html" />
+    <Content Include="ORIG\angular\images\loading-bars.svg" />
+    <Content Include="ORIG\angular\index.html" />
+    <Content Include="ORIG\angular\scripts\scripts.ba63db45.js" />
+    <Content Include="ORIG\angular\scripts\vendor.5c2b3ac5.js" />
+    <Content Include="ORIG\angular\styles\style.bb02c2e3.css" />
+    <Content Include="ORIG\angular\styles\vendor.cf60403d.css" />
+    <Content Include="ORIG\app_plans.html" />
+    <Content Include="ORIG\blog.html" />
+    <Content Include="ORIG\blog_details.html" />
+    <Content Include="ORIG\buttons.html" />
+    <Content Include="ORIG\calendar.html" />
+    <Content Include="ORIG\chartist.html" />
+    <Content Include="ORIG\chartjs.html" />
+    <Content Include="ORIG\chat_view.html" />
+    <Content Include="ORIG\code_editor.html" />
+    <Content Include="ORIG\components.html" />
+    <Content Include="ORIG\contacts.html" />
+    <Content Include="ORIG\datatables.html" />
+    <Content Include="ORIG\draggable.html" />
+    <Content Include="ORIG\email_template.html" />
+    <Content Include="ORIG\error_one.html" />
+    <Content Include="ORIG\error_two.html" />
+    <Content Include="ORIG\faq.html" />
+    <Content Include="ORIG\file_manager.html" />
+    <Content Include="ORIG\flot.html" />
+    <Content Include="ORIG\fonts\pe-icon-7-stroke\css\helper.css" />
+    <Content Include="ORIG\fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="ORIG\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="ORIG\footable.html" />
+    <Content Include="ORIG\forms_elements.html" />
+    <Content Include="ORIG\forms_extended.html" />
+    <Content Include="ORIG\forum.html" />
+    <Content Include="ORIG\forum_details.html" />
+    <Content Include="ORIG\gallery.html" />
+    <Content Include="ORIG\grid_system.html" />
+    <Content Include="ORIG\homer_admin-v1.8.html" />
+    <Content Include="ORIG\icons.html" />
+    <Content Include="ORIG\images\a1.jpg" />
+    <Content Include="ORIG\images\a2.jpg" />
+    <Content Include="ORIG\images\a3.jpg" />
+    <Content Include="ORIG\images\a4.jpg" />
+    <Content Include="ORIG\images\a5.jpg" />
+    <Content Include="ORIG\images\a6.jpg" />
+    <Content Include="ORIG\images\a7.jpg" />
+    <Content Include="ORIG\images\a8.jpg" />
+    <Content Include="ORIG\images\a9.jpg" />
+    <Content Include="ORIG\images\gallery\1.jpg" />
+    <Content Include="ORIG\images\gallery\10.jpg" />
+    <Content Include="ORIG\images\gallery\10s.jpg" />
+    <Content Include="ORIG\images\gallery\1s.jpg" />
+    <Content Include="ORIG\images\gallery\2.jpg" />
+    <Content Include="ORIG\images\gallery\2s.jpg" />
+    <Content Include="ORIG\images\gallery\3.jpg" />
+    <Content Include="ORIG\images\gallery\3s.jpg" />
+    <Content Include="ORIG\images\gallery\4.jpg" />
+    <Content Include="ORIG\images\gallery\4s.jpg" />
+    <Content Include="ORIG\images\gallery\5.jpg" />
+    <Content Include="ORIG\images\gallery\5s.jpg" />
+    <Content Include="ORIG\images\gallery\6.jpg" />
+    <Content Include="ORIG\images\gallery\6s.jpg" />
+    <Content Include="ORIG\images\gallery\7.jpg" />
+    <Content Include="ORIG\images\gallery\7s.jpg" />
+    <Content Include="ORIG\images\gallery\8.jpg" />
+    <Content Include="ORIG\images\gallery\8s.jpg" />
+    <Content Include="ORIG\images\gallery\9.jpg" />
+    <Content Include="ORIG\images\gallery\9s.jpg" />
+    <Content Include="ORIG\images\landing\c1.jpg" />
+    <Content Include="ORIG\images\landing\c2.jpg" />
+    <Content Include="ORIG\images\landing\c3.jpg" />
+    <Content Include="ORIG\images\landing\c4.jpg" />
+    <Content Include="ORIG\images\landing\c5.jpg" />
+    <Content Include="ORIG\images\landing\c6.jpg" />
+    <Content Include="ORIG\images\landing\c7.jpg" />
+    <Content Include="ORIG\images\landing\c8.jpg" />
+    <Content Include="ORIG\images\landing\s1.png" />
+    <Content Include="ORIG\images\landing\s2.png" />
+    <Content Include="ORIG\images\landing\s3.png" />
+    <Content Include="ORIG\images\landing\s4.png" />
+    <Content Include="ORIG\images\loading-bars.svg" />
+    <Content Include="ORIG\images\p1.jpg" />
+    <Content Include="ORIG\images\p2.jpg" />
+    <Content Include="ORIG\images\profile.jpg" />
+    <Content Include="ORIG\index.html" />
+    <Content Include="ORIG\inline.html" />
+    <Content Include="ORIG\invoice.html" />
+    <Content Include="ORIG\landing_page.html" />
+    <Content Include="ORIG\lock.html" />
+    <Content Include="ORIG\login.html" />
+    <Content Include="ORIG\mailbox.html" />
+    <Content Include="ORIG\mailbox_compose.html" />
+    <Content Include="ORIG\mailbox_view.html" />
+    <Content Include="ORIG\modals.html" />
+    <Content Include="ORIG\nestable_list.html" />
+    <Content Include="ORIG\notes.html" />
+    <Content Include="ORIG\options.html" />
+    <Content Include="ORIG\overview.html" />
+    <Content Include="ORIG\panels.html" />
+    <Content Include="ORIG\profile.html" />
+    <Content Include="ORIG\project.html" />
+    <Content Include="ORIG\projects.html" />
+    <Content Include="ORIG\register.html" />
+    <Content Include="ORIG\scripts\charts.js" />
+    <Content Include="ORIG\scripts\homer.js" />
+    <Content Include="ORIG\search.html" />
+    <Content Include="ORIG\social_board.html" />
+    <Content Include="ORIG\styles\static_custom.css" />
+    <Content Include="ORIG\styles\style.css" />
+    <Content Include="ORIG\tables_design.html" />
+    <Content Include="ORIG\text_editor.html" />
+    <Content Include="ORIG\timeline.html" />
+    <Content Include="ORIG\tour.html" />
+    <Content Include="ORIG\transition_five.html" />
+    <Content Include="ORIG\transition_four.html" />
+    <Content Include="ORIG\transition_one.html" />
+    <Content Include="ORIG\transition_three.html" />
+    <Content Include="ORIG\transition_two.html" />
+    <Content Include="ORIG\typography.html" />
+    <Content Include="ORIG\validation.html" />
+    <Content Include="ORIG\vendor\animate.css\animate.css" />
+    <Content Include="ORIG\vendor\awesome-bootstrap-checkbox\awesome-bootstrap-checkbox.css" />
+    <Content Include="ORIG\vendor\blueimp-gallery\css\blueimp-gallery.min.css" />
+    <Content Include="ORIG\vendor\blueimp-gallery\js\jquery.blueimp-gallery.min.js" />
+    <Content Include="ORIG\vendor\bootstrap-datepicker-master\dist\css\bootstrap-datepicker3.min.css" />
+    <Content Include="ORIG\vendor\bootstrap-datepicker-master\dist\js\bootstrap-datepicker.min.js" />
+    <Content Include="ORIG\vendor\bootstrap-star-rating\css\star-rating.css" />
+    <Content Include="ORIG\vendor\bootstrap-star-rating\js\star-rating.min.js" />
+    <Content Include="ORIG\vendor\bootstrap-touchspin\dist\jquery.bootstrap-touchspin.min.css" />
+    <Content Include="ORIG\vendor\bootstrap-touchspin\dist\jquery.bootstrap-touchspin.min.js" />
+    <Content Include="ORIG\vendor\bootstrap-tour\build\css\bootstrap-tour.min.css" />
+    <Content Include="ORIG\vendor\bootstrap-tour\build\js\bootstrap-tour.min.js" />
+    <Content Include="ORIG\vendor\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="ORIG\vendor\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="ORIG\vendor\chartist\custom\chartist.css" />
+    <Content Include="ORIG\vendor\chartist\dist\chartist.min.js" />
+    <Content Include="ORIG\vendor\chartjs\Chart.min.js" />
+    <Content Include="ORIG\vendor\codemirror\javascript.js" />
+    <Content Include="ORIG\vendor\codemirror\script\codemirror.js" />
+    <Content Include="ORIG\vendor\codemirror\style\codemirror.css" />
+    <Content Include="ORIG\vendor\datatables\media\js\jquery.dataTables.min.js" />
+    <Content Include="ORIG\vendor\datatables_plugins\integration\bootstrap\3\dataTables.bootstrap.css" />
+    <Content Include="ORIG\vendor\datatables_plugins\integration\bootstrap\3\dataTables.bootstrap.min.js" />
+    <Content Include="ORIG\vendor\flot.curvedlines\curvedLines.js" />
+    <Content Include="ORIG\vendor\fontawesome\css\font-awesome.css" />
+    <Content Include="ORIG\vendor\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="ORIG\vendor\fooTable\css\footable.core.min.css" />
+    <Content Include="ORIG\vendor\fooTable\dist\footable.all.min.js" />
+    <Content Include="ORIG\vendor\fullcalendar\dist\fullcalendar.min.css" />
+    <Content Include="ORIG\vendor\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="ORIG\vendor\fullcalendar\dist\fullcalendar.print.css" />
+    <Content Include="ORIG\vendor\iCheck\icheck.min.js" />
+    <Content Include="ORIG\vendor\jquery-flot\jquery.flot.js" />
+    <Content Include="ORIG\vendor\jquery-flot\jquery.flot.pie.js" />
+    <Content Include="ORIG\vendor\jquery-flot\jquery.flot.resize.js" />
+    <Content Include="ORIG\vendor\jquery-ui\jquery-ui.min.js" />
+    <Content Include="ORIG\vendor\jquery-ui\themes\base\all.css" />
+    <Content Include="ORIG\vendor\jquery-validation\jquery.validate.min.js" />
+    <Content Include="ORIG\vendor\jquery.flot.spline\index.js" />
+    <Content Include="ORIG\vendor\jquery\dist\jquery.min.js" />
+    <Content Include="ORIG\vendor\metisMenu\dist\metisMenu.css" />
+    <Content Include="ORIG\vendor\metisMenu\dist\metisMenu.min.js" />
+    <Content Include="ORIG\vendor\moment\min\moment.min.js" />
+    <Content Include="ORIG\vendor\moment\moment.js" />
+    <Content Include="ORIG\vendor\nestable\jquery.nestable.js" />
+    <Content Include="ORIG\vendor\peity\jquery.peity.min.js" />
+    <Content Include="ORIG\vendor\select2-3.5.2\select2.css" />
+    <Content Include="ORIG\vendor\select2-3.5.2\select2.min.js" />
+    <Content Include="ORIG\vendor\select2-bootstrap\select2-bootstrap.css" />
+    <Content Include="ORIG\vendor\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="ORIG\vendor\sparkline\index.js" />
+    <Content Include="ORIG\vendor\summernote\dist\summernote-bs3.css" />
+    <Content Include="ORIG\vendor\summernote\dist\summernote.css" />
+    <Content Include="ORIG\vendor\summernote\dist\summernote.min.js" />
+    <Content Include="ORIG\vendor\sweetalert\lib\sweet-alert.css" />
+    <Content Include="ORIG\vendor\sweetalert\lib\sweet-alert.min.js" />
+    <Content Include="ORIG\vendor\toastr\build\toastr.min.css" />
+    <Content Include="ORIG\vendor\toastr\build\toastr.min.js" />
+    <Content Include="ORIG\vendor\xeditable\bootstrap3-editable\css\bootstrap-editable.css" />
+    <Content Include="ORIG\vendor\xeditable\bootstrap3-editable\js\bootstrap-editable.min.js" />
+    <Content Include="ORIG\widgets.html" />
+    <Content Include="ORIG\wizard.html" />
+    <Content Include="projectDetail.html" />
+    <Content Include="projects.html" />
+    <Content Include="scripts\bootstrap-datepicker.min.js" />
+    <Content Include="scripts\bootstrap-editable.min.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\Chart.min.js" />
+    <Content Include="scripts\charts.js" />
+    <Content Include="scripts\curvedLines.js" />
+    <Content Include="scripts\dataTables.bootstrap.min.js" />
+    <Content Include="scripts\footable.all.min.js" />
+    <Content Include="scripts\homer.js" />
+    <Content Include="scripts\icheck.min.js" />
+    <Content Include="scripts\index.js" />
+    <Content Include="scripts\jquery-ui.min.js" />
+    <Content Include="scripts\jquery.bootstrap-touchspin.min.js" />
+    <Content Include="scripts\jquery.dataTables.min.js" />
+    <Content Include="scripts\jquery.flot.js" />
+    <Content Include="scripts\jquery.flot.pie.js" />
+    <Content Include="scripts\jquery.flot.resize.js" />
+    <Content Include="scripts\jquery.min.js" />
+    <Content Include="scripts\jquery.peity.min.js" />
+    <Content Include="scripts\jquery.slimscroll.min.js" />
+    <Content Include="scripts\jquery.validate.min.js" />
+    <Content Include="scripts\metisMenu.min.js" />
+    <Content Include="scripts\moment.js" />
+    <Content Include="scripts\select2.min.js" />
+    <Content Include="scripts\sparkline_index.js" />
+    <Content Include="scripts\summernote.min.js" />
+    <Content Include="scripts\sweet-alert.min.js" />
+    <Content Include="selectControlTest.html" />
+    <Content Include="styles\all.css" />
+    <Content Include="styles\animate.css" />
+    <Content Include="styles\awesome-bootstrap-checkbox.css" />
+    <Content Include="styles\bootstrap-datepicker3.min.css" />
+    <Content Include="styles\bootstrap-editable.css" />
+    <Content Include="styles\bootstrap-rtl.min.css" />
+    <Content Include="styles\bootstrap.css" />
+    <Content Include="styles\dataTables.bootstrap.css" />
+    <Content Include="styles\font-awesome.css" />
+    <Content Include="styles\helper.css" />
+    <Content Include="styles\jquery.bootstrap-touchspin.min.css" />
+    <Content Include="styles\metisMenu.css" />
+    <Content Include="styles\pe-icon-7-stroke.css" />
+    <Content Include="styles\select2-bootstrap.css" />
+    <Content Include="styles\select2.css" />
+    <Content Include="styles\style.css" />
+    <Content Include="styles\footable.core.min.css" />
+    <Content Include="styles\summernote-bs3.css" />
+    <Content Include="styles\summernote.css" />
+    <Content Include="styles\sweet-alert.css" />
+    <Content Include="userDashboard.html" />
+    <Content Include="userProfile.html" />
+    <Content Include="userProfileView.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\ir-fonts\IRANSans-Light.eot" />
+    <Content Include="fonts\ir-fonts\IRANSans-Light.ttf" />
+    <Content Include="fonts\ir-fonts\IRANSans-Light.woff" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome\fontawesome-webfont.woff2" />
+    <Content Include="fonts\bootstrap-font\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\bootstrap-font\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\bootstrap-font\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\bootstrap-font\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\Pe-icon-7-stroke\Pe-icon-7-stroke.eot" />
+    <Content Include="fonts\Pe-icon-7-stroke\Pe-icon-7-stroke.ttf" />
+    <Content Include="fonts\Pe-icon-7-stroke\Pe-icon-7-stroke.woff" />
+    <Content Include="fonts\ir-fonts\Yekan.eot" />
+    <Content Include="fonts\ir-fonts\Yekan.ttf" />
+    <Content Include="fonts\ir-fonts\Yekan.woff" />
+    <Content Include="fonts\footable\footable.eot" />
+    <Content Include="fonts\footable\footable.ttf" />
+    <Content Include="fonts\footable\footable.woff" />
+    <Content Include="ORIG\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="ORIG\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="ORIG\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="ORIG\vendor\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="ORIG\vendor\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="ORIG\vendor\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="ORIG\vendor\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\gallery\" />
+    <Folder Include="images\landing\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12396</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12396/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

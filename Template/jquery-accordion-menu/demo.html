@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>jQuery Accordion Menu </title>
+    <link href="css/jquery-accordion-menu.css" rel="stylesheet">
+    <link href="plugins/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <style>* {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    body {
+        background: #f0f0f0;
+    }
+
+    .content {
+        width: 260px;
+        margin: 100px auto;
+    }
+
+    .colors {
+        width: 260px;
+        float: left;
+        margin: 20px auto;
+    }
+
+    .colors a {
+        width: 43.3px;
+        height: 30px;
+        float: left;
+    }
+
+    .colors .default {
+        background: #414956;
+    }
+
+    .colors .blue {
+        background: #4A89DC;
+    }
+
+    .colors .green {
+        background: #03A678;
+    }
+
+    .colors .red {
+        background: #ED5565;
+    }
+
+    .colors .white {
+        background: #fff;
+    }
+
+    .colors .black {
+        background: #292929;
+    }
+    </style>
+    <script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-accordion-menu.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            $("#jquery-accordion-menu").removeClass();
+            $("#jquery-accordion-menu").addClass("jquery-accordion-menu").addClass("green");
+
+            jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
+        jQuery(".colors a").click(function () {
+            if ($(this).attr("class") != "default") {
+                $("#jquery-accordion-menu").removeClass();
+                $("#jquery-accordion-menu").addClass("jquery-accordion-menu").addClass($(this).attr("class"));
+            } else {
+                $("#jquery-accordion-menu").removeClass();
+                $("#jquery-accordion-menu").addClass("jquery-accordion-menu");
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+<div class="content">
+    <!--<div class="colors green">-->
+        <!--<a class="default" href="javascript:void(0)"></a>-->
+        <!--<a class="blue" href="javascript:void(0)"> </a>-->
+        <!--<a class="green" href="javascript:void(0)"> </a>-->
+        <!--<a class="red" href="javascript:void(0)"> </a>-->
+        <!--<a class="white" href="javascript:void(0)"> </a>-->
+        <!--<a class="black" href="javascript:void(0)"> </a>-->
+    <!--</div>-->
+    <div id="jquery-accordion-menu" class="jquery-accordion-menu">
+        <div class="jquery-accordion-menu-header"> Header</div>
+        <ul>
+            <li class="active"><a href=" demo.html#"> <i class="fa fa-home"> </i> Home </a></li>
+            <li><a href="demo.html#"> <i class="fa fa-glass"> </i> Events </a></li>
+            <li><a href="demo.html#"> <i class="fa fa-file-image-o"> </i> Gallery </a> <span
+                    class="jquery-accordion-menu-label"> 12 </span></li>
+            <li><a href="demo.html#"> <i class="fa fa-cog"> </i> Services </a>
+                <ul class="submenu">
+                    <li><a href="demo.html#"> Web Design </a></li>
+                    <li><a href="demo.html#"> Hosting </a></li>
+                    <li><a href="demo.html#"> Design </a>
+                        <ul class="submenu">
+                            <li><a href="demo.html#"> Graphics </a></li>
+                            <li><a href="demo.html#"> Vectors </a></li>
+                            <li><a href="demo.html#"> Photoshop </a></li>
+                            <li><a href="demo.html#"> Fonts </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="demo.html#"> Consulting </a></li>
+                </ul>
+            </li>
+            <li><a href="demo.html#"> <i class="fa fa-newspaper-o"> </i> News </a></li>
+            <li><a href="demo.html#"> <i class="fa fa-suitcase"> </i> Portfolio </a>
+                <ul class="submenu">
+                    <li><a href="demo.html#"> Web Design </a></li>
+                    <li><a href="demo.html#"> Graphics </a> <span class="jquery-accordion-menu-label"> 10 </span></li>
+                    <li><a href="demo.html#"> Photoshop </a></li>
+                    <li><a href="demo.html#"> Programming </a></li>
+                </ul>
+            </li>
+            <li><a href="demo.html#"> <i class="fa fa-user"> </i> About </a></li>
+            <li><a href="demo.html#"> <i class="fa fa-envelope"> </i> Contact </a></li>
+        </ul>
+        <div class="jquery-accordion-menu-footer"> Footer</div>
+    </div>
+</div>
+</body>
+</html>

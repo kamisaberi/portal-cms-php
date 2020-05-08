@@ -1,0 +1,59 @@
+
+
+
+
+<div style="" class="col-lg-6">
+    <div class="hpanel hgreen animated zoomIn">
+        <div class="panel-heading">
+            <div class="panel-tools">
+                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                <a class="closebox"><i class="fa fa-times"></i></a>
+            </div>
+            <?php echo $_GET[0] ?>
+        </div>
+        <div class="panel-body list">
+            <div class="table-responsive project-list">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th colspan="2">ردیف</th>
+                            <th>نمودار پیشرفت</th>
+                            <th>درصد پیشرفت</th>
+                            <th>تاریخ</th>
+                            <th>وضیت</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $projects = $_GET[1];
+                        $num = 1;
+                        foreach ($projects as $project) {
+                            ?>
+                            <tr>
+                                <td><?php echo $num++; ?></td>
+                                <td>
+                                    <?php echo $project->Title; ?>
+                                    <br>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i>
+                                        &nbsp;
+                                        ایجاد شده در   25 دی ماه 1393
+                                    </small>
+                                </td>
+                                <td>
+                                    <span style="display: none;" class="pie">1/5</span><svg width="16" height="16" class="peity"><path fill="#62cb31" d="M 8 0 A 8 8 0 0 1 15.60845213036123 5.52786404500042 L 8 8"></path><path fill="#edf0f5" d="M 15.60845213036123 5.52786404500042 A 8 8 0 1 1 7.999999999999998 0 L 8 8"></path></svg>
+                                </td>
+                                <td><strong>20%</strong></td>
+                                <td>1392/10/5</td>
+                                <td><a href=""><i class="fa fa-check text-success"></i></a></td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

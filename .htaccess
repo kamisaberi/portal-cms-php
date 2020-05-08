@@ -1,0 +1,29 @@
+RewriteEngine On
+# Estate Code
+#Options +FollowSymLinks
+#RewriteEngine on
+#RewriteRule /id/(.*)/title/(.*)\.htm Estate.php?id=$1&title=$2
+
+
+
+
+
+
+# Wordpress MU Code
+#RewriteEngine On
+#RewriteBase /
+#RewriteRule ^index\.php$ - [L]
+#
+## add a trailing slash to /wp-admin
+#RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
+#
+#RewriteCond %{REQUEST_FILENAME} -f [OR]
+#RewriteCond %{REQUEST_FILENAME} -d
+#RewriteRule ^ - [L]
+#RewriteRule ^(wp-(content|admin|includes).*) $1 [L]
+#RewriteRule ^(.*\.php)$ $1 [L]
+#RewriteRule . index.php [L]
+
+
+ErrorDocument 404 /Errors/Error404.php
+ErrorDocument 505 /Errors/Error505.php

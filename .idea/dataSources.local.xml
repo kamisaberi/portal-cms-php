@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - Net4@localhost" uuid="a54611ff-7c5c-4ccc-9c84-976ebfbc5843">
+      <secret-storage>master_key</secret-storage>
+      <user-name>kami</user-name>
+      <schema-pattern>Net4.*</schema-pattern>
+      <default-schemas>Net4.*</default-schemas>
+    </data-source>
+  </component>
+</project>

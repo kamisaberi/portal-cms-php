@@ -1,0 +1,10 @@
+<div class="widget p-lg center golden-bg">
+    <div class="m-lg">
+        <i class="fa fa-shield fa-4x"></i>
+        <h1 class="m-md"><?php echo $_GET['score'] ?></h1>
+        <h3 class="font-bold">
+            <?php echo $_GET['bigtext'] ?>
+        </h3>
+
+    </div>
+</div>

@@ -1,0 +1,17 @@
+
+<?php //echo $_GET['color'] . "<br><br><br><br>";  ?>
+<div class="col-sm-4">
+    <div class="hpanel h<?php echo $_GET['color']; ?>">
+        <div class="panel-body widget-small-height">
+            <div class="text-center">
+                <h3><?php echo $_GET['bigtext']; ?></h3>
+                <p class="text-big text-<?php echo $_GET['color']; ?>">
+                    <?php echo $_GET['value']; ?>
+                </p>
+                <small>
+                </small>
+                <button class="btn btn-outline btn-<?php echo $_GET['buttoncolor']; ?> btn-sm" type="button"><?php echo $_GET['buttontext']; ?></button>
+            </div>
+        </div>
+    </div>
+</div>

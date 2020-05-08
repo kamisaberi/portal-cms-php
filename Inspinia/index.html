@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>INSPINIA | Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+
+
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/style-md-skin.css" rel="stylesheet">
+
+</head>
+
+<body class="md-skin fixed-nav fixed-sidebar ">
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg"/>
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">حمید
+                                درند</strong>
+                             </span> <span class="text-muted text-xs block">مدیر شرکت <b
+                                    class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">پروفایل</a></li>
+                            <li><a href="contacts.html">تماس ها</a></li>
+                            <li><a href="mailbox.html">صندوق پستی</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">خروج</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">داشبورد ها</span> <span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="index.html">داشبورد یک</a></li>
+                        <li><a href="dashboard_2.html">داشبورد دو</a></li>
+                        <li><a href="dashboard_3.html">داشبورد سه</a></li>
+                        <li><a href="dashboard_4_1.html">داشبورد چهار</a></li>
+                        <li><a href="dashboard_5.html">داشبورد پنج</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="layouts.html"><i class="fa fa-diamond"></i> <span
+                            class="nav-label">ساختار قال بندی ها</span></a>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">گراف ها</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="graph_flot.html">چارت flot</a></li>
+                        <li><a href="graph_morris.html">چارت های Morris.js</a></li>
+                        <li><a href="graph_rickshaw.html">چارت های Rickshaw</a></li>
+                        <li><a href="graph_chartjs.html">Chart.js</a></li>
+                        <li><a href="graph_chartist.html">Chartist</a></li>
+                        <li><a href="c3.html">چارت های c3</a></li>
+                        <li><a href="graph_peity.html">چارت های Peity</a></li>
+                        <li><a href="graph_sparkline.html">چارت های Sparkline</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">صندوق پست </span><span
+                            class="label label-warning pull-left">16/24</span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="mailbox.html">Inbox</a></li>
+                        <li><a href="mail_detail.html">Email view</a></li>
+                        <li><a href="mail_compose.html">Compose email</a></li>
+                        <li><a href="email_template.html">Email templates</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">متریک ها</span> </a>
+                </li>
+                <li>
+                    <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">ویجت ها</span></a>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-edit"></i> <span class="nav-label">فرم ها</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="form_basic.html">فرم ساده</a></li>
+                        <li><a href="form_advanced.html">پلاگین های پیشرفته</a></li>
+                        <li><a href="form_wizard.html">ویزارد ها</a></li>
+                        <li><a href="form_file_upload.html">آپلود فایل</a></li>
+                        <li><a href="form_editors.html">ویرایشگر متن</a></li>
+                        <li><a href="form_markdown.html">Markdown</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-desktop"></i> <span class="nav-label">صفحات مختلف</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="profile_2.html">Profile v.2</a></li>
+                        <li><a href="contacts_2.html">Contacts v.2</a></li>
+                        <li><a href="projects.html">پروژه ها</a></li>
+                        <li><a href="project_detail.html">جزییات پروژه</a></li>
+                        <li><a href="teams_board.html">Teams board</a></li>
+                        <li><a href="social_feed.html">Social feed</a></li>
+                        <li><a href="clients.html">مشتریان</a></li>
+                        <li><a href="full_height.html">Outlook view</a></li>
+                        <li><a href="vote_list.html">لیست آراء</a></li>
+                        <li><a href="file_manager.html">مدیریت فایل</a></li>
+                        <li><a href="calendar.html">تقویم</a></li>
+                        <li><a href="issue_tracker.html">Issue tracker</a></li>
+                        <li><a href="blog.html">وبلاگ</a></li>
+                        <li><a href="article.html">مقالات</a></li>
+                        <li><a href="faq.html">پرسش و پاسخ</a></li>
+                        <li><a href="timeline.html">خط زمانی</a></li>
+                        <li><a href="pin_board.html">Pin board</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-files-o"></i> <span class="nav-label">دیگر صفحات</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="search_results.html">Search results</a></li>
+                        <li><a href="lockscreen.html">Lockscreen</a></li>
+                        <li><a href="invoice.html">Invoice</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="login_two_columns.html">Login v.2</a></li>
+                        <li><a href="forgot_password.html">Forget password</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="404.html">404 Page</a></li>
+                        <li><a href="500.html">500 Page</a></li>
+                        <li><a href="empty_page.html">Empty page</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-globe"></i> <span class="nav-label">متفرقه</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="toastr_notifications.html">Notification</a></li>
+                        <li><a href="nestable_list.html">Nestable list</a></li>
+                        <li><a href="agile_board.html">Agile board</a></li>
+                        <li><a href="timeline_2.html">Timeline v.2</a></li>
+                        <li><a href="diff.html">Diff</a></li>
+                        <li><a href="i18support.html">i18 support</a></li>
+                        <li><a href="sweetalert.html">Sweet alert</a></li>
+                        <li><a href="idle_timer.html">Idle timer</a></li>
+                        <li><a href="truncate.html">Truncate</a></li>
+                        <li><a href="spinners.html">Spinners</a></li>
+                        <li><a href="tinycon.html">Live favicon</a></li>
+                        <li><a href="google_maps.html">Google maps</a></li>
+                        <li><a href="code_editor.html">Code editor</a></li>
+                        <li><a href="modal_window.html">Modal window</a></li>
+                        <li><a href="clipboard.html">Clipboard</a></li>
+                        <li><a href="forum_main.html">Forum view</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="tree_view.html">Tree view</a></li>
+                        <li><a href="loading_buttons.html">Loading buttons</a></li>
+                        <li><a href="chat_view.html">Chat view</a></li>
+                        <li><a href="masonry.html">Masonry</a></li>
+                        <li><a href="tour.html">Tour</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-flask"></i> <span
+                            class="nav-label">المان های گرافیکی</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="icons.html">Icons</a></li>
+                        <li><a href="draggable_panels.html">Draggable Panels</a></li>
+                        <li><a href="resizeable_panels.html">Resizeable Panels</a></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="tabs_panels.html">Panels</a></li>
+                        <li><a href="tabs.html">Tabs</a></li>
+                        <li><a href="notifications.html">Notifications & Tooltips</a></li>
+                        <li><a href="badges_labels.html">Badges, Labels, Progress</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="grid_options.html"><i class="fa fa-laptop"></i> <span
+                            class="nav-label">سیستم گریدبندی</span></a>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-table"></i> <span class="nav-label">جداول</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="table_basic.html">Static Tables</a></li>
+                        <li><a href="table_data_tables.html">Data Tables</a></li>
+                        <li><a href="table_foo_table.html">Foo Tables</a></li>
+                        <li><a href="jq_grid.html">jqGrid</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-shopping-cart"></i> <span
+                            class="nav-label">تجارت الکترونیکی</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="ecommerce_products_grid.html">Products grid</a></li>
+                        <li><a href="ecommerce_product_list.html">Products list</a></li>
+                        <li><a href="ecommerce_product.html">Product edit</a></li>
+                        <li><a href="ecommerce_product_detail.html">Product detail</a></li>
+                        <li><a href="ecommerce-cart.html">Cart</a></li>
+                        <li><a href="ecommerce-orders.html">Orders</a></li>
+                        <li><a href="ecommerce_payments.html">Credit Card form</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-picture-o"></i> <span class="nav-label">گالری</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="basic_gallery.html">Lightbox Gallery</a></li>
+                        <li><a href="slick_carousel.html">Slick Carousel</a></li>
+                        <li><a href="carousel.html">Bootstrap Carousel</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#"><i class="fa fa-sitemap"></i> <span class="nav-label">لول های منو</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a href="index.html#">Third Level <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="index.html#">Third Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">Third Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">Third Level Item</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="index.html#">Second Level Item</a></li>
+                        <li>
+                            <a href="index.html#">Second Level Item</a></li>
+                        <li>
+                            <a href="index.html#">Second Level Item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="css_animation.html"><i class="fa fa-magic"></i> <span
+                            class="nav-label">انیمشن CSS</span><span class="label label-info pull-left">62</span></a>
+                </li>
+                <li class="landing_link">
+                    <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span>
+                        <span class="label label-warning pull-right">NEW</span></a>
+                </li>
+                <li class="special_link">
+                    <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-fixed-top navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="index.html#"><i
+                            class="fa fa-bars"></i> </a>
+                    <form role="search" class="navbar-form-custom" action="search_results.html">
+                        <div class="form-group">
+                            <input type="text" placeholder="جستجو" class="form-control"
+                                   name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-left">
+                    <!--<li>-->
+                    <!--<span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>-->
+                    <!--</li>-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                            <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a href="profile.html" class="pull-right">
+                                        <img alt="image" class="img-circle" src="img/a7.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <small class="pull-left">
+                                            46 ساعت
+                                        </small>
+                                        <strong>
+                                            حمید درند
+                                        </strong>
+                                        دنبال کننده ی
+                                        <strong>
+                                            فشکالی
+                                        </strong>
+                                        است.
+                                        <br>
+                                        <small class="text-muted">
+                                            2 روز قبل ساعت 12:30 عصر
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a href="profile.html" class="pull-right">
+                                        <img alt="image" class="img-circle" src="img/a4.jpg">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="pull-left text-navy">
+                                            46 ساعت
+                                        </small>
+                                        <strong>
+                                            حمید درند
+                                        </strong>
+                                        دنبال کننده ی
+                                        <strong>
+                                            فشکالی
+                                        </strong>
+                                        است.
+                                        <br>
+                                        <small class="text-muted">
+                                            2 روز قبل ساعت 12:30 عصر
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a href="profile.html" class="pull-right">
+                                        <img alt="image" class="img-circle" src="img/profile.jpg">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="pull-left">
+                                            46 ساعت
+                                        </small>
+                                        <strong>
+                                            حمید درند
+                                        </strong>
+                                        دنبال کننده ی
+                                        <strong>
+                                            فشکالی
+                                        </strong>
+                                        است.
+                                        <br>
+                                        <small class="text-muted">
+                                            2 روز قبل ساعت 12:30 عصر
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="mailbox.html">
+                                        <i class="fa fa-envelope"></i> <strong>
+                                        تمامی پیغام ها را بخوانید
+                                    </strong>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                            <i class="fa fa-bell"></i> <span class="label label-inverse">
+                            18
+                        </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="mailbox.html">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i>
+                                        شما 16 پیغام دارید.
+
+                                        <span class="pull-left text-muted small">
+                                            4 دقیقه قبل
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="profile.html">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i>
+                                        3 دنبال کننده
+
+                                        <span class="pull-left text-muted small">
+                                            12 ساعت قبل
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="grid_options.html">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i>
+                                        سرور دوباره راه اندازی شد.
+                                        <span class="pull-left text-muted small">
+                                            4 دقیقه قبل
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="notifications.html">
+                                        <strong>
+                                            نمایش تمامی پیغام ها
+                                        </strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i>
+                            خروج
+                        </a>
+                    </li>
+                    <li>
+                        <a class="right-sidebar-toggle">
+                            <i class="fa fa-tasks"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="row  border-bottom white-bg dashboard-header">
+
+            <div class="col-sm-3">
+                <h2>سلام حمید</h2>
+                <small>شما 42 پیغام و 6 هشدار دارید</small>
+                <ul class="list-group clear-list m-t">
+                    <li class="list-group-item fist-item">
+                                <span class="pull-left">
+                                   9:00 صبح
+                                </span>
+                        <span class="label label-success">1</span>
+                        لطفا با من تماس بگیرید
+                    </li>
+                    <li class="list-group-item">
+                                <span class="pull-left">
+                                    10:16 صبح
+                                </span>
+                        <span class="label label-info">2</span>
+                        قرارداد را امضا کنید
+                    </li>
+                    <li class="list-group-item">
+                                <span class="pull-left">
+                                   8:22 عصر
+                                </span>
+                        <span class="label label-primary">3</span>
+                        فروشگاه را باز کنید
+                    </li>
+                    <li class="list-group-item">
+                                <span class="pull-left">
+                                   10:25 عصر
+                                </span>
+                        <span class="label label-default">4</span>
+                        با مقدم تماس بگیر
+                    </li>
+                    <li class="list-group-item">
+                                <span class="pull-left">
+                                    12:00 شب
+                                </span>
+                        <span class="label label-primary">5</span>
+                        جواب ایمیل تایید را بدهید
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <div class="flot-chart dashboard-chart">
+                    <div class="flot-chart-content" id="flot-dashboard-chart"></div>
+                </div>
+                <div class="row text-left">
+                    <div class="col-xs-4">
+                        <div class=" m-l-md">
+                            <span class="h4 font-bold m-t block">
+                                406,100 تومان
+                            </span>
+                            <small class="text-muted m-b block">
+                                گزارش فروش
+                            </small>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <span class="h4 font-bold m-t block">
+                        510,120 تومان
+                        </span>
+                        <small class="text-muted m-b block">
+                            درآمد فروش سالیانه
+                        </small>
+                    </div>
+                    <div class="col-xs-4">
+                        <span class="h4 font-bold m-t block">
+                            15,120 تومان
+                        </span>
+                        <small class="text-muted m-b block">
+                            درآمد نیمسال
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="statistic-box">
+                    <h4>
+                        پیشرفت پروژه
+                    </h4>
+                    <p>
+                        شما 12 وظیفه نا تمام دارید.
+                    </p>
+                    <div class="row text-center">
+                        <div class="col-lg-6">
+                            <canvas id="polarChart" width="80" height="80"></canvas>
+                            <h5>
+                                کولتر
+
+                            </h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <canvas id="doughnutChart" width="78" height="78"></canvas>
+                            <h5>
+                                مکستور
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="m-t">
+                        <small>
+
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با اس لورم ایپسوم متن ساختگی با
+                            تولید سادگی نامفهوم از صنعت چاپ و با اس
+
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>
+                                        جدیدترین داده ها برای گزارش
+                                    </h5> <span class="label label-primary">
+                                    ناریج
+                                </span>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html#">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="index.html#">Config option 1</a>
+                                            </li>
+                                            <li><a href="index.html#">Config option 2</a>
+                                            </li>
+                                        </ul>
+                                        <a class="close-link">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div>
+
+                                        <div class="pull-left text-right">
+
+                                            <span class="bar_dashboard">5,3,9,6,5,9,7,3,5,2,4,7,3,2,7,9,6,4,5,7,3,2,1,0,9,5,6,8,3,2,1</span>
+                                            <br/>
+                                            <small class="font-bold">
+                                                200,300,000 تومان
+                                            </small>
+                                        </div>
+                                        <h4>
+                                            گزارش سالانه شرکت
+                                            <br/>
+                                            <small class="m-r"><a href="graph_flot.html">
+                                                قیمت ها را بررسی کنید!
+                                            </a>
+                                            </small>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>
+                                        کامنت های زیر را بخوانید
+                                    </h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html#">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="index.html#">Config option 1</a>
+                                            </li>
+                                            <li><a href="index.html#">Config option 2</a>
+                                            </li>
+                                        </ul>
+                                        <a class="close-link">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ibox-content no-padding">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="index.html#">
+                                                @حمید درند
+                                            </a>
+
+                                                این متن برای تست می باشد.
+
+                                            </p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i>
+
+                                                12 دقیقه قبل
+                                            </small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="index.html#">
+                                                @حمید درند
+                                            </a>
+
+                                                این متن برای تست می باشد.
+
+                                            </p>
+                                            <div class="text-center m">
+                                                <span id="sparkline8"></span>
+                                            </div>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i>
+                                                12 دقیقه قبل
+                                            </small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="index.html#">
+                                                @حمید درند
+                                            </a>
+
+                                                این متن برای تست می باشد.
+
+                                            </p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i>
+                                                12 دقیقه قبل
+                                            </small>
+                                        </li>
+                                        <li class="list-group-item ">
+                                            <p><a class="text-info" href="index.html#">
+                                                @حمید درند
+                                            </a>
+
+                                                این متن برای تست می باشد.
+
+                                            </p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i>
+                                                12 دقیقه قبل
+                                            </small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="index.html#">
+                                                @حمید درند
+                                            </a>
+
+                                                این متن برای تست می باشد.
+
+                                            </p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i>
+                                                12 دقیقه قبل
+                                            </small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="index.html#">
+                                                @حمید درند
+                                            </a>
+
+                                                این متن برای تست می باشد.
+
+                                            </p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i>
+                                                12 دقیقه قبل
+                                            </small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>
+                                        بازخورد روزانه شما
+                                    </h5>
+                                    <div class="ibox-tools">
+                                        <span class="label label-warning-light pull-right">
+10 پیغام
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ibox-content">
+
+                                    <div>
+                                        <div class="feed-activity-list">
+
+                                            <div class="feed-element">
+                                                <a href="profile.html" class="pull-right">
+                                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                                </a>
+                                                <div class="media-body ">
+                                                    <small class="pull-left">
+                                                        5 دقیقه قبل
+                                                    </small>
+                                                    <strong>
+                                                        حمید درند
+                                                    </strong>
+                                                    یک پست جدید در سایت قرار داد.
+                                                    <br>
+                                                    <small class="text-muted">
+                                                        امروز ساعت 12:36 عصر
+                                                    </small>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="feed-element">
+                                                <a href="profile.html" class="pull-right">
+                                                    <img alt="image" class="img-circle" src="img/a2.jpg">
+                                                </a>
+                                                <div class="media-body ">
+                                                    <small class="pull-left">
+                                                        5 دقیقه قبل
+                                                    </small>
+                                                    <strong>
+                                                        حمید درند
+                                                    </strong>
+                                                    یک پست جدید در سایت قرار داد.
+                                                    <br>
+                                                    <small class="text-muted">
+                                                        امروز ساعت 12:36 عصر
+                                                    </small>
+
+                                                </div>
+                                            </div>
+                                            <div class="feed-element">
+                                                <a href="profile.html" class="pull-right">
+                                                    <img alt="image" class="img-circle" src="img/a3.jpg">
+                                                </a>
+                                                <div class="media-body ">
+                                                    <small class="pull-left">
+                                                        5 دقیقه قبل
+                                                    </small>
+                                                    <strong>
+                                                        حمید درند
+                                                    </strong>
+                                                    یک پست جدید در سایت قرار داد.
+                                                    <br>
+                                                    <small class="text-muted">
+                                                        امروز ساعت 12:36 عصر
+                                                    </small>
+
+                                                </div>
+                                            </div>
+                                            <div class="feed-element">
+                                                <a href="profile.html" class="pull-right">
+                                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                                </a>
+                                                <div class="media-body ">
+                                                    <small class="pull-left text-navy">
+                                                        5 ساعت قبل
+
+                                                    </small>
+                                                    <strong>
+                                                        حمید درند
+                                                    </strong>
+                                                    <br>
+                                                    <small class="text-muted">
+                                                        امروز ساعت 12:36 عصر
+                                                    </small>
+                                                    <div class="actions">
+                                                        <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i>
+                                                            Like </a>
+                                                        <a class="btn btn-xs btn-white"><i class="fa fa-heart"></i> Love</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="feed-element">
+                                                <a href="profile.html" class="pull-right">
+                                                    <img alt="image" class="img-circle" src="img/a5.jpg">
+                                                </a>
+                                                <div class="media-body ">
+                                                    <small class="pull-left text-navy">
+                                                        5 ساعت قبل
+
+                                                    </small>
+                                                    <strong>
+                                                        حمید درند
+                                                    </strong>
+                                                    <br>
+                                                    <small class="text-muted">
+                                                        امروز ساعت 12:36 عصر
+                                                    </small>
+                                                    <div class="well">
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                                                        در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                                                        نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                                        کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                                                        جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                                                        برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در
+                                                        زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و
+                                                        دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                                                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات
+                                                        پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                                    </div>
+                                                    <div class="pull-right">
+                                                        <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i>
+                                                            Like </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="feed-element">
+                                                <a href="profile.html" class="pull-right">
+                                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                                </a>
+                                                <div class="media-body ">
+                                                    <small class="pull-left text-navy">
+                                                        5 ساعت قبل
+
+                                                    </small>
+                                                    <strong>
+                                                        حمید درند
+                                                    </strong><br>
+                                                    <small class="text-muted">
+                                                        امروز ساعت 12:36 عصر
+                                                    </small>
+                                                </div>
+                                            </div>
+                                            <div class="feed-element">
+                                                <a href="profile.html" class="pull-right">
+                                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                                </a>
+                                                <div class="media-body ">
+                                                    <small class="pull-left text-navy">
+                                                        5 ساعت قبل
+
+                                                    </small>
+                                                    <strong>
+                                                        حمید درند
+                                                    </strong>
+                                                    <br>
+                                                    <small class="text-muted">
+                                                        امروز ساعت 12:36 عصر
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i>
+                                            نمایش بیشتر
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>
+                                        پروژه آلفا
+                                    </h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html#">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="index.html#">Config option 1</a>
+                                            </li>
+                                            <li><a href="index.html#">Config option 2</a>
+                                            </li>
+                                        </ul>
+                                        <a class="close-link">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ibox-content ibox-heading">
+                                    <h3>
+                                        شما امروز جلسه دارید
+                                    </h3>
+                                    <small><i class="fa fa-map-marker"></i>
+                                        جلسه ساعت 6 عصر می باشد.
+                                    </small>
+                                </div>
+                                <div class="ibox-content inspinia-timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-briefcase"></i>
+                                                6 صبح
+                                                <br/>
+                                                <small class="text-navy">
+                                                    2 ساعت قبل
+                                                </small>
+                                            </div>
+                                            <div class="col-xs-7 content no-top-border">
+                                                <p class="m-b-xs"><strong>
+                                                    جلسه
+                                                </strong></p>
+
+                                                <p>
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+
+
+                                                </p>
+
+                                                <p><span data-diameter="40" class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,4,7,3,2,9,8,7,4,5,1,2,9,5,4,7,2,7,7,3,5,2</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-file-text"></i>
+                                                7:00 صبح
+                                                <br/>
+                                                <small class="text-navy">
+                                                    3 ساعت قبل
+                                                </small>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>
+
+                                                    ارسال اسناد برای ثابتی
+
+
+                                                </strong></p>
+                                                <p>
+
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-coffee"></i>
+                                                8:00 صبح
+                                                <br/>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>
+                                                    زمان قهوه
+                                                </strong></p>
+                                                <p>
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-phone"></i>
+                                                11:00 صبح
+                                                <br/>
+                                                <small class="text-navy">
+                                                    12 ساعت قبل
+                                                </small>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>
+                                                    تماس با مقدم
+                                                </strong></p>
+                                                <p>
+
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-user-md"></i>
+                                                09:00 عصر
+                                                <br/>
+                                                <small>
+                                                    12 ساعت قبل
+                                                </small>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>
+                                                    رفتن به دندانپزشکی
+
+                                                </strong></p>
+                                                <p>
+
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-comments"></i>
+                                                12:50 عصر
+                                                <br/>
+                                                <small class="text-navy">
+                                                    12 ساعت قبل
+                                                </small>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>
+                                                    صحبت با تایید و مرادی
+
+
+                                                </strong></p>
+                                                <p>
+
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer fixed">
+                    <div class="pull-left">
+                        شرکت ناریج
+                    </div>
+                    <div class="pull-right">
+                        <strong>
+                            کپی رایت
+                        </strong>
+                        شرکت جادوی ارتباط افزار 2010-2016
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="small-chat-box fadeInRight animated">
+
+        <div class="heading" draggable="true">
+            <small class="chat-date pull-right">
+                02.19.2015
+            </small>
+            Small chat
+        </div>
+
+        <div class="content">
+
+            <div class="left">
+                <div class="author-name">
+                    Monica Jackson
+                    <small class="chat-date">
+                        10:02 am
+                    </small>
+                </div>
+                <div class="chat-message active">
+                    Lorem Ipsum is simply dummy text input.
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="author-name">
+                    Mick Smith
+                    <small class="chat-date">
+                        11:24 am
+                    </small>
+                </div>
+                <div class="chat-message">
+                    Lorem Ipsum is simpl.
+                </div>
+            </div>
+            <div class="left">
+                <div class="author-name">
+                    Alice Novak
+                    <small class="chat-date">
+                        08:45 pm
+                    </small>
+                </div>
+                <div class="chat-message active">
+                    Check this stock char.
+                </div>
+            </div>
+            <div class="right">
+                <div class="author-name">
+                    Anna Lamson
+                    <small class="chat-date">
+                        11:24 am
+                    </small>
+                </div>
+                <div class="chat-message">
+                    The standard chunk of Lorem Ipsum
+                </div>
+            </div>
+            <div class="left">
+                <div class="author-name">
+                    Mick Lane
+                    <small class="chat-date">
+                        08:45 pm
+                    </small>
+                </div>
+                <div class="chat-message active">
+                    I belive that. Lorem Ipsum is simply dummy text.
+                </div>
+            </div>
+
+
+        </div>
+        <div class="form-chat">
+            <div class="input-group input-group-sm"><input type="text" class="form-control"> <span
+                    class="input-group-btn"> <button
+                    class="btn btn-primary" type="button">Send
+            </button> </span></div>
+        </div>
+
+    </div>
+    <!--<div id="small-chat">-->
+
+    <!--<span class="badge badge-warning pull-right">5</span>-->
+    <!--<a class="open-small-chat">-->
+    <!--<i class="fa fa-comments"></i>-->
+
+    <!--</a>-->
+    <!--</div>-->
+    <div id="right-sidebar">
+        <div class="sidebar-container">
+
+            <ul class="nav nav-tabs navs-3">
+
+                <li class="active"><a data-toggle="tab" href="index.html#tab-1">
+                    Notes
+                </a></li>
+                <li><a data-toggle="tab" href="index.html#tab-2">
+                    Projects
+                </a></li>
+                <li class=""><a data-toggle="tab" href="index.html#tab-3">
+                    <i class="fa fa-gear"></i>
+                </a></li>
+            </ul>
+
+            <div class="tab-content">
+
+
+                <div id="tab-1" class="tab-pane active">
+
+                    <div class="sidebar-title">
+                        <h3><i class="fa fa-comments-o"></i>
+                            آخرین یادداشت ها
+                        </h3>
+                        <small><i class="fa fa-tim"></i>
+                            شما 10 پیغام دارید.
+                        </small>
+                    </div>
+
+                    <div>
+
+                        <div class="sidebar-message">
+                            <a href="index.html#">
+                                <div class="pull-right text-center">
+                                    <img alt="image" class="img-circle message-avatar" src="img/a1.jpg">
+
+                                    <div class="m-t-xs">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+
+                                    این متن برای تست می باشد.
+                                    این متن برای تست می باشد.
+                                    این متن برای تست می باشد.
+                                    <br>
+                                    <small class="text-muted">
+                                        امروز 4:20 عصر
+
+                                    </small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sidebar-message">
+                            <a href="index.html#">
+                                <div class="pull-right text-center">
+                                    <img alt="image" class="img-circle message-avatar" src="img/a2.jpg">
+                                </div>
+                                <div class="media-body">
+
+                                    این متن برای تست می باشد.
+                                    <br>
+                                    <small class="text-muted">
+                                        امروز 4:20 عصر
+
+                                    </small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sidebar-message">
+                            <a href="index.html#">
+                                <div class="pull-right text-center">
+                                    <img alt="image" class="img-circle message-avatar" src="img/a3.jpg">
+
+                                    <div class="m-t-xs">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+
+                                    این متن برای تست می باشد.
+                                    <br>
+                                    <small class="text-muted">
+                                        امروز 4:20 عصر
+
+                                    </small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sidebar-message">
+                            <a href="index.html#">
+                                <div class="pull-right text-center">
+                                    <img alt="image" class="img-circle message-avatar" src="img/a4.jpg">
+                                </div>
+
+                                <div class="media-body">
+
+                                    این متن برای تست می باشد.
+                                    <br>
+                                    <small class="text-muted">
+                                        امروز 4:20 عصر
+
+                                    </small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sidebar-message">
+                            <a href="index.html#">
+                                <div class="pull-right text-center">
+                                    <img alt="image" class="img-circle message-avatar" src="img/a8.jpg">
+                                </div>
+                                <div class="media-body">
+
+                                    این متن برای تست می باشد.
+                                    <br>
+                                    <small class="text-muted">
+                                        امروز 4:20 عصر
+
+                                    </small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sidebar-message">
+                            <a href="index.html#">
+                                <div class="pull-right text-center">
+                                    <img alt="image" class="img-circle message-avatar" src="img/a7.jpg">
+                                </div>
+                                <div class="media-body">
+
+                                    این متن برای تست می باشد.
+                                    <br>
+                                    <small class="text-muted">
+                                        امروز 4:20 عصر
+
+                                    </small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sidebar-message">
+                            <a href="index.html#">
+                                <div class="pull-right text-center">
+                                    <img alt="image" class="img-circle message-avatar" src="img/a3.jpg">
+
+                                    <div class="m-t-xs">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+
+                                    این متن برای تست می باشد.
+                                    <br>
+                                    <small class="text-muted">
+                                        امروز 4:20 عصر
+
+                                    </small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sidebar-message">
+                            <a href="index.html#">
+                                <div class="pull-right text-center">
+                                    <img alt="image" class="img-circle message-avatar" src="img/a4.jpg">
+                                </div>
+                                <div class="media-body">
+
+                                    این متن برای تست می باشد.
+                                    <br>
+                                    <small class="text-muted">
+                                        امروز 4:20 عصر
+
+                                    </small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="tab-2" class="tab-pane">
+
+                    <div class="sidebar-title">
+                        <h3><i class="fa fa-cube"></i>
+                            آخرین پروژه ها
+                        </h3>
+                        <small><i class="fa fa-tim"></i>
+                            شما 14 پروژه داریدکه 10 پروژه نا تمام است.
+                        </small>
+                    </div>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="index.html#">
+                                <div class="small pull-right m-t-xs">
+                                    9 ساعت قبل
+                                </div>
+                                <h4>
+                                    ارزش یابی تجاری
+                                </h4>
+
+                                این یک متن تستی می باشد.
+
+                                <div class="small">
+                                    درصد تکمیل: 22%
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                </div>
+                                <div class="small text-muted m-t-xs">
+
+                                    پایان پروژه : 94/02/02 ساعت 14:20
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <div class="small pull-right m-t-xs">
+                                    9 ساعت قبل
+                                </div>
+                                <h4>
+                                    ارزش یابی تجاری
+                                </h4>
+
+                                این یک متن تستی می باشد.
+
+                                <div class="small">
+                                    درصد تکمیل: 22%
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 48%;" class="progress-bar"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <div class="small pull-right m-t-xs">
+                                    9 ساعت قبل
+                                </div>
+                                <h4>
+                                    ارزش یابی تجاری
+                                </h4>
+
+                                این یک متن تستی می باشد.
+
+                                <div class="small">
+                                    درصد تکمیل: 22%
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <div class="small pull-right m-t-xs">
+                                    9 ساعت قبل
+                                </div>
+                                <h4>
+                                    ارزش یابی تجاری
+                                </h4>
+
+                                این یک متن تستی می باشد.
+
+                                <div class="small">
+                                    درصد تکمیل: 22%
+                                </div>
+                                <div class="small text-muted m-t-xs">
+
+                                    پایان پروژه : 94/02/02 ساعت 14:20
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <div class="small pull-right m-t-xs">
+                                    9 ساعت قبل
+                                </div>
+                                <h4>
+                                    ارزش یابی تجاری
+                                </h4>
+
+                                این یک متن تستی می باشد.
+
+                                <div class="small">
+                                    درصد تکمیل: 22%
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                </div>
+                                <div class="small text-muted m-t-xs">
+
+                                    پایان پروژه : 94/02/02 ساعت 14:20
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <div class="small pull-right m-t-xs">
+                                    9 ساعت قبل
+                                </div>
+                                <h4>
+                                    ارزش یابی تجاری
+                                </h4>
+
+                                این یک متن تستی می باشد.
+
+                                <div class="small">
+                                    درصد تکمیل: 22%
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 48%;" class="progress-bar"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <div class="small pull-right m-t-xs">
+                                    9 ساعت قبل
+                                </div>
+                                <h4>
+                                    ارزش یابی تجاری
+                                </h4>
+
+                                این یک متن تستی می باشد.
+
+                                <div class="small">
+                                    درصد تکمیل: 22%
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <div class="small pull-right m-t-xs">
+                                    9 ساعت قبل
+                                </div>
+                                <h4>
+                                    ارزش یابی تجاری
+                                </h4>
+
+                                این یک متن تستی می باشد.
+
+                                <div class="small">
+                                    درصد تکمیل: 22%
+                                </div>
+                                <div class="small text-muted m-t-xs">
+
+                                    پایان پروژه : 94/02/02 ساعت 14:20
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Flot -->
+<script src="js/plugins/flot/jquery.flot.js"></script>
+<script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<script src="js/plugins/flot/jquery.flot.spline.js"></script>
+<script src="js/plugins/flot/jquery.flot.resize.js"></script>
+<script src="js/plugins/flot/jquery.flot.pie.js"></script>
+
+<!-- Peity -->
+<script src="js/plugins/peity/jquery.peity.min.js"></script>
+<script src="js/demo/peity-demo.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- GITTER -->
+<script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+
+<!-- Sparkline -->
+<script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Sparkline demo data  -->
+<script src="js/demo/sparkline-demo.js"></script>
+
+<!-- ChartJS-->
+<script src="js/plugins/chartJs/Chart.min.js"></script>
+
+<!-- Toastr -->
+<script src="js/plugins/toastr/toastr.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+//        setTimeout(function () {
+//            toastr.options = {
+//                closeButton: true,
+//                progressBar: true,
+//                showMethod: 'slideDown',
+//                timeOut: 4000
+//            };
+//            toastr.success('Responsive Admin Theme', 'Welcome to INSPINIA');
+//
+//        }, 1300);
+
+
+        var data1 = [
+            [0, 4], [1, 8], [2, 5], [3, 10], [4, 4], [5, 16], [6, 5], [7, 11], [8, 6], [9, 11], [10, 30], [11, 10], [12, 13], [13, 4], [14, 3], [15, 3], [16, 6]
+        ];
+        var data2 = [
+            [0, 1], [1, 0], [2, 2], [3, 0], [4, 1], [5, 3], [6, 1], [7, 5], [8, 2], [9, 3], [10, 2], [11, 1], [12, 0], [13, 2], [14, 8], [15, 0], [16, 0]
+        ];
+        $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+                    data1, data2
+                ],
+                {
+                    series: {
+                        lines: {
+                            show: false,
+                            fill: true
+                        },
+                        splines: {
+                            show: true,
+                            tension: 0.4,
+                            lineWidth: 1,
+                            fill: 0.4
+                        },
+                        points: {
+                            radius: 0,
+                            show: true
+                        },
+                        shadowSize: 2
+                    },
+                    grid: {
+                        hoverable: true,
+                        clickable: true,
+                        tickColor: "#d5d5d5",
+                        borderWidth: 1,
+                        color: '#d5d5d5'
+                    },
+                    colors: ["#1ab394", "#1C84C6"],
+                    xaxis: {},
+                    yaxis: {
+                        ticks: 4
+                    },
+                    tooltip: false
+                }
+        );
+
+        var doughnutData = [
+            {
+                value: 300,
+                color: "#a3e1d4",
+                highlight: "#1ab394",
+                label: "App"
+            },
+            {
+                value: 50,
+                color: "#dedede",
+                highlight: "#1ab394",
+                label: "Software"
+            },
+            {
+                value: 100,
+                color: "#A4CEE8",
+                highlight: "#1ab394",
+                label: "Laptop"
+            }
+        ];
+
+        var doughnutOptions = {
+            segmentShowStroke: true,
+            segmentStrokeColor: "#fff",
+            segmentStrokeWidth: 2,
+            percentageInnerCutout: 45, // This is 0 for Pie charts
+            animationSteps: 100,
+            animationEasing: "easeOutBounce",
+            animateRotate: true,
+            animateScale: false
+        };
+
+        var ctx = document.getElementById("doughnutChart").getContext("2d");
+        var DoughnutChart = new Chart(ctx).Doughnut(doughnutData, doughnutOptions);
+
+        var polarData = [
+            {
+                value: 300,
+                color: "#a3e1d4",
+                highlight: "#1ab394",
+                label: "App"
+            },
+            {
+                value: 140,
+                color: "#dedede",
+                highlight: "#1ab394",
+                label: "Software"
+            },
+            {
+                value: 200,
+                color: "#A4CEE8",
+                highlight: "#1ab394",
+                label: "Laptop"
+            }
+        ];
+
+        var polarOptions = {
+            scaleShowLabelBackdrop: true,
+            scaleBackdropColor: "rgba(255,255,255,0.75)",
+            scaleBeginAtZero: true,
+            scaleBackdropPaddingY: 1,
+            scaleBackdropPaddingX: 1,
+            scaleShowLine: true,
+            segmentShowStroke: true,
+            segmentStrokeColor: "#fff",
+            segmentStrokeWidth: 2,
+            animationSteps: 100,
+            animationEasing: "easeOutBounce",
+            animateRotate: true,
+            animateScale: false
+        };
+        var ctx = document.getElementById("polarChart").getContext("2d");
+        var Polarchart = new Chart(ctx).PolarArea(polarData, polarOptions);
+
+    });
+</script>
+</body>
+</html>

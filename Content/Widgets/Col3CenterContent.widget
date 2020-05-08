@@ -1,0 +1,19 @@
+<div class="col-sm-3">
+    <div class="hpanel h<?php echo $_GET['color']; ?>">
+        <div class="panel-body text-center h-200">
+            <i class="<?php echo $_GET['image']; ?> fa-4x"></i>
+
+            <h1 class="m-xs">
+                <?php echo $_GET['value']; ?>
+                <br />
+                <span class="unit-label"><?php echo $_GET['smalltext']; ?></span>
+            </h1>
+
+            <h3 class="font-extra-bold no-margins text-<?php echo $_GET['color']; ?> p-m">
+                <?php echo $_GET['bigtext']; ?>
+            </h3>
+            <small></small>
+        </div>
+
+    </div>
+</div>
